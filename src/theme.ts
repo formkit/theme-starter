@@ -41,19 +41,11 @@ import toggle from "./inputs/pro/toggle";
 import transferlist from "./inputs/pro/transferlist";
 
 /**
- * Welcome to the FormKit theme starter.
+ * Welcome to the FormKit starter theme.
  *
  * If this is your first time writing a FormKit theme then we strongly encourage
- * you to read all the comments in this file before you begin making edits.
+ * you to read all the comments in this file (and imported files) before you begin making edits.
  * Once you are comfortable feel free to remove the comments and start building.
- * You can also download a copy without comments via the FormKit CLI:
- *
- * npx formkit theme-starter --no-comments
- *
- * or — if you're absolutely confident you know what you're doing — you can download
- * a copy with no comments AND no pre-set structural styles with:
- *
- * npx formkit theme-starter --bare
  *
  * There are numerous comments throughout this file that will help you understand
  * how to best leverage the available features of FormKit themes. There are also comments
@@ -70,9 +62,10 @@ import transferlist from "./inputs/pro/transferlist";
 export default createTheme({
   meta: {
     name: "Starter",
-    description: "",
-    authorName: "",
-    authorWebsite: "",
+    description:
+      "A FormKit theme with minimal styling (and thorough comments) intended to help theme authors create their own theme.",
+    authorName: "FormKit",
+    authorWebsite: "https://formkit.com",
     formKitVersion: "^1.0.0",
     /**
      * === Supported Inputs ===
@@ -118,7 +111,7 @@ export default createTheme({
     ],
     /**
      * === Light & Dark mode ===
-     * Specify which color modes your theme provides so that
+     * Specify which color modes your theme supports so that
      * users can filter according to their project needs.
      */
     lightMode: true,
@@ -260,6 +253,7 @@ export default createTheme({
     "family:button": familyButton,
     "family:box": familyBox,
     "family:text": familyText,
+    "family:dropdown": familyDropdown, // pro only
 
     /**
      * === Core Inputs ===
@@ -295,15 +289,8 @@ export default createTheme({
      *
      * Because these inputs are "synthetic" they represent much more DOM structure
      * than standard browser-native inputs. This means there will be much more boilerplate
-     * provided in the class lists below in order to assist with styling.
+     * provided in their class lists in order to assist with styling.
      */
-
-    /**
-     * === Family groupings ===
-     * These class lists apply to all inputs that are part of the matching family.
-     * There is a comment in each input class list that indicates which family it belongs to.
-     */
-    "family:dropdown": familyDropdown,
     autocomplete: autocomplete,
     colorpicker: colorpicker,
     datepicker: datepicker,
