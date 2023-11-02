@@ -35,9 +35,7 @@ export default {
     justify-start
     last:mb-0
   `,
-  label: `
-    mb-$spacing(-1)
-  `,
+  label: ``,
   prefixIcon: `
     text-$colorTemperature-600
   `,
