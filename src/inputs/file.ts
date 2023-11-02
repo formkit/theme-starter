@@ -66,7 +66,7 @@ export default {
     text-[0px] ${
       "" /** on single inputs hide the remove text because we have an icon */
     }
-    peer-data-[has-multiple]:text-$scale ${
+    peer-data-[has-multiple]:text-xs ${
       "" /** on multiple inputs show the remove text */
     }
     peer-data-[has-multiple]:shrink-0 ${
