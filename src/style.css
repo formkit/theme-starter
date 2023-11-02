@@ -1,0 +1,131 @@
+:root {
+  --bg-color: #fafafa;
+  --panel-bg-color: #fff;
+  --text-color: red; /* for debugging — red text means you're missing styles */
+  --border-color: #eaeaea;
+  --panel-border-color: rgb(226, 226, 226);
+  --headline-color: #000;
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+html.dark {
+  --bg-color: #171717;
+  --panel-bg-color: #1e1e1e;
+  --panel-border-color: #333;
+  --border-color: #333;
+  --headline-color: #fff;
+}
+
+#app {
+  padding: min(2vw, 2rem);
+}
+
+.formkit-kitchen-sink {
+  width: 100%;
+  max-width: 1300px;
+}
+.formkit-input-type {
+  display: block;
+  font-size: 2em;
+  font-family: sans-serif;
+  margin-bottom: 0.25em;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: var(--headline-color);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.5em;
+  margin-bottom: 2em;
+}
+
+.formkit-specimen-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 400px);
+  margin-bottom: 4em;
+}
+.formkit-input-section[data-type="transferlist"] .formkit-specimen-group {
+  grid-template-columns: repeat(auto-fit, 650px);
+}
+
+.formkit-specimen {
+  max-width: 75vw;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
+}
+
+.example-form {
+  color: var(--headline-color);
+  max-width: 800px;
+  padding: 2em;
+  margin-left: 3em;
+  margin-right: auto;
+  margin-bottom: 10rem;
+  padding: 5rem;
+  background: var(--panel-bg-color);
+  border: 1px solid var(--panel-border-color);
+}
+.formkit-kitchen-sink h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1;
+  margin-bottom: 0.5em;
+  color: var(--headline-color);
+}
+.formkit-kitchen-sink p {
+  color: var(--headline-color);
+  margin-bottom: 1em;
+  font-size: 0.875em;
+}
+.formkit-input-section[data-type^="form/"] .formkit-specimen-group {
+  display: flex;
+  justify-content: center;
+}
+.formkit-input-section[data-type^="form/"] .formkit-specimen {
+  width: 100%;
+  max-width: 800px;
+  background: var(--panel-bg-color);
+  padding: min(5vw, 5em);
+  border: var(--border-color);
+  box-shadow:
+    0 0 1em 0 rgba(0, 0, 0, 0.1),
+    0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+.double {
+  display: flex;
+}
+.double > * {
+  width: 50%;
+  flex-grow: 1;
+}
+.double > *:first-child {
+  margin-right: 0.25em;
+}
+.double > *:last-child {
+  margin-left: 0.25em;
+}
+.triple {
+  display: flex;
+}
+.triple > * {
+  flex-grow: 1;
+  width: 33.333%;
+}
+.triple > *:first-child {
+  margin-right: 0.5em;
+}
+.triple > *:last-child {
+  margin-left: 0.5em;
+}
