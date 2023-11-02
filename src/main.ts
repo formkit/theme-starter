@@ -10,7 +10,7 @@ import theme from "./theme";
 
 createEditor();
 
-const proPlugin = createProPlugin("fk-d3833badbd", inputs);
+const proPlugin = createProPlugin(import.meta.env.FORMKIT_PRO_KEY, inputs);
 const config = defaultConfig({
   plugins: [proPlugin],
   icons: genesisIcons,
