@@ -68,8 +68,6 @@ export default {
     */
     }
     focus-within:ring-2 
-
-    group-data-[disabled]:bg-$colorTemperature-100
     group-data-[disabled]:!cursor-not-allowed
   `,
   input: `
