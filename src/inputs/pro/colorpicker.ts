@@ -160,6 +160,7 @@ export default {
     bg-white
     shadow-[0_0_0_2px_rgba(255,255,255,1),0_0_0_3px_rgba(0,0,0,0.2)]
     -translate-y-1/2
+    -translate-x-1/2
     pointer-events-none ${
       "" /** prevent the control from being clickable because the underlying canvas has the click event handlers */
     }
@@ -221,7 +222,6 @@ export default {
   controlLS: `
     w-[10px] 
     h-[10px] 
-    -translate-x-1/2 
     rounded-full
   `,
   preview: `
@@ -251,7 +251,7 @@ export default {
     relative
     inline-flex
     h-3/4
-    pl-$spacing
+    ml-$spacing
   `,
   canvasHue: `
     $radius(-1,rounded-none,rounded-xl) ${
@@ -260,9 +260,8 @@ export default {
   `,
   controlHue: `
     w-[4px]
-    h-[calc(100%-2px)]
     top-1/2
-    translate-x-1/2
+    h-[calc(100%-2px)]
     $radius(0,rounded-none,rounded-2xl)
   `,
   alpha: `
@@ -270,7 +269,7 @@ export default {
     relative
     inline-flex
     h-3/4
-    pl-$spacing
+    ml-$spacing
   `,
   canvasAlpha: `
     $radius(-1,rounded-none,rounded-xl) ${
@@ -279,9 +278,8 @@ export default {
   `,
   controlAlpha: `
     w-[4px]
-    h-[calc(100%-2px)]
     top-1/2
-    translate-x-1/2
+    h-[calc(100%-2px)]
     $radius(0,rounded-none,rounded-2xl)
   `,
   eyeDropper: `
