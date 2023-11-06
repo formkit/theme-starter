@@ -3,7 +3,7 @@ lockfileVersion: '6.0'
 overrides:
   '@formkit/icons': 1.3.0-8d923c0
   '@formkit/vue': 1.3.0-8d923c0
-  '@formkit/pro': 0.117.5-668fa88
+  '@formkit/pro': 0.117.5-bdf25c3
 
 dependencies:
   '@formkit/theme-creator':
@@ -15,8 +15,8 @@ devDependencies:
     specifier: 1.3.0-8d923c0
     version: 1.3.0-8d923c0
   '@formkit/pro':
-    specifier: 0.117.5-668fa88
-    version: 0.117.5-668fa88
+    specifier: 0.117.5-bdf25c3
+    version: 0.117.5-bdf25c3
   '@formkit/theme-editor':
     specifier: ^0.3.2
     version: 0.3.3
@@ -390,8 +390,8 @@ packages:
       '@formkit/utils': 1.3.0-8d923c0
     dev: true
 
-  /@formkit/pro@0.117.5-668fa88:
-    resolution: {integrity: sha512-XTcUYBLYNNqVcfYToUoh5+kWHvPzz+hFOiThO0tL2gjA98E/YiWLYh+xHYx0OrYAg6gYu2z69Z2zhYA3srCxOw==}
+  /@formkit/pro@0.117.5-bdf25c3:
+    resolution: {integrity: sha512-TN2df7M0rGjWFt63gQ3V1kA2zcfatP5BIunGi+Dzi9vPja7J80IRt2JlD6wJUZuQKVjniuL5RAo1yCZfd4g4qA==}
     dependencies:
       '@formkit/core': 1.3.0-8d923c0
       '@formkit/inputs': 1.3.0-8d923c0

@@ -151,7 +151,7 @@ export default {
     transition-opacity
     group-hover:opacity-100
     group-focus-visible/handle:opacity-100
-    group-data-[show-tooltip=true]:opacity-100
+    group-data-[show-tooltip=true]/handle:opacity-100
 
     ${"" /** tooltip triangle styles */}
     after:content-[""]
