@@ -4,7 +4,7 @@ export default {
   outer: ``,
   wrapper: ``,
   label: ``,
-  inner: "py-$spacing pr-0 pl-0 $radius(0,rounded-none,rounded-2xl)",
+  inner: "py-$spacing pr-0 pl-0",
   prefixIcon: ``,
   suffixIcon: ``,
   tags: "pl-$spacing(2,2,4)",

@@ -11,8 +11,17 @@ export default {
     items-center
     border
     border-$colorTemperature-$colorTemperatureStrength
-    $radius
     focus-within:ring-2
+    $radius
+
+    ${
+      "" /** === ⚠️ CAUTION: Border radius on multi-line inputs === 
+    inputs such as the taglist (and the dropdown when the appearance is set to "tags") can wrap to
+    multiple lines. When the input is multiline we want to clamp the maximum radius to avoid undesireable
+    styling effects.
+    */
+    }
+    group-data-[is-multiline]:!$radius(0,rounded-none,rounded-2xl)
   `,
   prefixIcon: `
     !ml-$spacing
@@ -170,6 +179,7 @@ export default {
     overflow-clip
     border
     border-$colorTemperature-$colorTemperatureStrength
+    empty:hidden
   `,
   listitem: `
     relative
