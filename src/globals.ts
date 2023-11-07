@@ -26,6 +26,8 @@ export default {
     text-$colorTemperature-$colorTemperatureStrength 
     text-$scale(-1,*)
     mb-$spacing(-2,*)
+
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
   `,
   legend: `
     ${
@@ -35,6 +37,8 @@ export default {
     block 
     text-$colorTemperature-$colorTemperatureStrength 
     text-$scale(-1,*)
+
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
   `,
   input: `
     ${
@@ -47,6 +51,8 @@ export default {
     [color-scheme:light] 
     dark:[color-scheme:dark]
     placeholder:text-$colorTemperature-400
+
+    dark:placeholder:text-$colorTemperature-500
   `,
   placeholder: `
     ${
@@ -54,6 +60,7 @@ export default {
       concept of a placeholder, so make sure we style them appropriately */
     }
     text-$colorTemperature-400
+    dark:text-$colorTemperature-500
   `,
   prefixIcon: `
     flex 
@@ -102,6 +109,8 @@ export default {
     w-[1em]
     shrink-0
     [&>svg]:w-full
+
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
   `,
   /** Used across inputs when a loading action is happening */
   loadMoreInner: `
@@ -110,16 +119,22 @@ export default {
     text-$colorTemperature-$colorTemperatureStrength
     p-$spacing
     [&>span]:mr-$spacing
+
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
   `,
   help: `
     text-$colorTemperature-$colorTemperatureStrength 
     text-$scale(-2,*)
+
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
   `,
   messages: ``,
   message: `
     text-red-600
     mb-$spacing(-1)
     text-$scale(-2,*)
+
+    dark:text-red-400
   `,
   /**
    * The following overlay* section keys are used for inputs that have
@@ -128,17 +143,22 @@ export default {
    */
   overlay: `
     text-$colorTemperature-$colorTemperatureStrength
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
   `,
   overlayPlaceholder: `
     text-$colorTemperature-$colorTemperatureStrength
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
   `,
   overlayLiteral: `
     text-$colorTemperature-$colorTemperatureStrength
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
   `,
   overlayChar: `
     text-$colorTemperature-$colorTemperatureStrength
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
   `,
   overlayEnum: `
     text-$colorTemperature-$colorTemperatureStrength
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
   `,
 };

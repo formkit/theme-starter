@@ -46,6 +46,9 @@ export default {
     [&>svg]:m-auto
     [&>svg]:max-h-[1em]
     [&>svg]:max-w-[1em]
+
+    dark:text-$colorTemperature-400
+    dark:focus-visible:text-$accentColor-$accentColorStrengthDark
   `,
   panelWrapper: `
     group/panel
@@ -58,6 +61,9 @@ export default {
     border
     border-$colorTemperature-$colorTemperatureStrength
     z-10
+
+    dark:bg-$colorTemperature-900
+    dark:border-$colorTemperature-$colorTemperatureStrengthDark
 
     ${
       "" /** === ⚠️ CAUTION: Mobile touch styles ===
@@ -86,6 +92,8 @@ export default {
     mb-$spacing
     pb-$spacing(1,*)
 
+    dark:border-$colorTemperature-$colorTemperatureStrengthDark
+
     ${
       "" /** === ⚠️ CAUTION: Mobile touch styles ===
       When the colorpicker is being used on small touch devices it is helpful to 
@@ -109,6 +117,9 @@ export default {
     justify-center
     text-$colorTemperature-$colorTemperatureStrength
     [&_svg]:w-[1.25em]
+
+    dark:border-$colorTemperature-600
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
 
     ${
       "" /** === ⚠️ CAUTION: Mobile touch styles ===
@@ -136,6 +147,8 @@ export default {
     text-$colorTemperature-$colorTemperatureStrength
     col-start-2
     col-end-2
+
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
   `,
   timeHeader: `
     flex
@@ -179,6 +192,8 @@ export default {
     select-none
     text-$colorTemperature-$colorTemperatureStrength
     [&>svg]:w-full
+
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
   `,
   nextIcon: `
     flex
@@ -186,6 +201,8 @@ export default {
     select-none
     text-$colorTemperature-$colorTemperatureStrength
     [&>svg]:w-full
+
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
   `,
   panel: `
     flex 
@@ -209,6 +226,11 @@ export default {
     focus:bg-white
     group-data-[disabled]:opacity-50
     group-data-[disabled]:pointer-events-none
+
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
+    dark:aria-selected:!bg-$accentColor-$accentColorStrengthDark
+    dark:aria-selected:!text-black
+    dark:focus:bg-black
   `,
   years: `
     grid 
@@ -228,6 +250,11 @@ export default {
     focus:ring-2
     group-data-[disabled]:opacity-50
     group-data-[disabled]:pointer-events-none
+
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
+    dark:aria-selected:!bg-$accentColor-$accentColorStrengthDark
+    dark:aria-selected:!text-black
+    dark:focus:bg-black
   `,
   weekDays: `
     grid 
@@ -236,6 +263,8 @@ export default {
   weekDay: `
     text-$colorTemperature-$colorTemperatureStrength
     m-$spacing(-1)
+
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
   `,
   week: `
     grid
@@ -261,6 +290,12 @@ export default {
     focus:bg-white
     data-[disabled]:opacity-50
     data-[disabled]:pointer-events-none
+
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
+    dark:bg-$colorTemperature-700
+    dark:aria-selected:bg-$accentColor-$accentColorStrengthDark
+    dark:aria-selected:text-black
+    dark:focus:bg-black
   `,
   timeInput: `
     w-full
@@ -275,6 +310,9 @@ export default {
     my-$spacing(1)
     focus-visible:outline-none
     focus-visible:ring-2
+
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
+    dark:border-$colorTemperature-$colorTemperatureStrengthDark
   `,
   dayButton: `
     appearance-none
@@ -286,6 +324,9 @@ export default {
     mx-1
     focus-visible:outline-none
     focus-visible:ring-2
+
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
+    dark:border-$colorTemperature-$colorTemperatureStrengthDark
   `,
   monthButton: `
     appearance-none
@@ -297,6 +338,9 @@ export default {
     mx-1
     focus-visible:outline-none
     focus-visible:ring-2
+
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
+    dark:border-$colorTemperature-$colorTemperatureStrengthDark
   `,
   yearButton: `
     appearance-none
@@ -308,6 +352,9 @@ export default {
     mx-1
     focus-visible:outline-none
     focus-visible:ring-2
+
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
+    dark:border-$colorTemperature-$colorTemperatureStrengthDark
   `,
   help: ``,
   messages: ``,

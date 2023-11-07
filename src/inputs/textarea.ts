@@ -6,22 +6,27 @@ export default {
   prefixIcon: `
     !ml-$spacing
     !mr-0
-    text-$colorTemperature-$colorTemperatureStrength
+    text-$colorTemperature-600
+
+    dark:text-$colorTemperature-400
   `,
   suffixIcon: `
     !mr-$spacing
     !ml-0
-    text-$colorTemperature-$colorTemperatureStrength
+    text-$colorTemperature-600
+
+    dark:text-$colorTemperature-400
   `,
   inner: `
     flex
     items-center
-    
     mb-$spacing(-1)
     border
     border-$colorTemperature-$colorTemperatureStrength
     $radius(0,rounded-none,rounded-2xl) ${"" /** Don't go full rounded */}
     focus-within:ring-2
+
+    dark:border-$colorTemperature-$colorTemperatureStrengthDark
   `,
   input: `
     text-$scale
@@ -38,6 +43,8 @@ export default {
     }
     outline-none
     bg-transparent
+
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
 
     ${
       "" /** === ⚠️ CAUTION: Tailwind Forms Overrides === 

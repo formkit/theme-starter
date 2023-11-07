@@ -3,8 +3,18 @@ export default {
   outer: ``,
   wrapper: ``,
   label: ``,
-  prefixIcon: "ml-$spacing text-$colorTemperature-$colorTemperatureStrength",
-  suffixIcon: "mr-$spacing text-$colorTemperature-$colorTemperatureStrength",
+  prefixIcon: `
+    ml-$spacing
+    text-$colorTemperature-$colorTemperatureStrength
+
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
+  `,
+  suffixIcon: `
+    mr-$spacing 
+    text-$colorTemperature-$colorTemperatureStrength
+
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
+  `,
   inner: `
     ${"" /* base styles */}
     relative
@@ -14,7 +24,6 @@ export default {
     border-$colorTemperature-$colorTemperatureStrength
     $radius
     focus-within:ring-2
-    
     ${
       "" /** === ⚠️ CAUTION: Multiple select radius style === 
     We do not want to allow for a fully rounded border on a multiple select
@@ -22,6 +31,8 @@ export default {
     */
     }
     group-data-[multiple]:$radius(0,rounded-none,rounded-2xl)
+
+    dark:border-$colorTemperature-$colorTemperatureStrengthDark
   `,
   input: `
     ${"" /* base styles */}
@@ -39,13 +50,18 @@ export default {
     group-data-[suffix-icon]:!pr-0
     data-[placeholder]:text-$colorTemperature-$colorTemperatureStrength
 
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
+    dark:data-[placeholder]:text-$colorTemperature-$colorTemperatureStrengthDark
+
     ${
       "" /** === ⚠️ CAUTION: Tailwind Forms Overrides === 
     These are overrides for the Tailwind Forms plugin. You should include them in case
     your theme user has the plugin enabled so that its styles don't conflict with your theme.
     */
     }
-    border-none focus:ring-0 bg-none
+    border-none 
+    focus:ring-0 
+    bg-none
   `,
   selectIcon: `
     absolute
@@ -54,6 +70,8 @@ export default {
     pointer-events-none
     right-$spacing
     group-data-[suffix-icon]:mr-[1.5em]
+
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
   `,
   optGroup: `
     group/optgroup

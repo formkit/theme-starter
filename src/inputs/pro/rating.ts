@@ -25,6 +25,7 @@ export default {
   `,
   offItems: `
     text-$colorTemperature-400
+    dark:first-letter:text-$colorTemperature-600
   `,
   offItemWrapper: `
     [&>*]:w-full

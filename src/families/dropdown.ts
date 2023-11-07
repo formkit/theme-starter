@@ -13,7 +13,6 @@ export default {
     border-$colorTemperature-$colorTemperatureStrength
     focus-within:ring-2
     $radius
-
     ${
       "" /** === ⚠️ CAUTION: Border radius on multi-line inputs === 
     inputs such as the taglist (and the dropdown when the appearance is set to "tags") can wrap to
@@ -22,16 +21,22 @@ export default {
     */
     }
     group-data-[is-multiline]:!$radius(0,rounded-none,rounded-2xl)
+
+    dark:border-$colorTemperature-$colorTemperatureStrengthDark
   `,
   prefixIcon: `
     !ml-$spacing
     !mr-0
     text-$colorTemperature-$colorTemperatureStrength
+
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
   `,
   suffixIcon: `
     !mr-$spacing
     !ml-0
     text-$colorTemperature-$colorTemperatureStrength
+
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
   `,
   input: `
     grow
@@ -46,14 +51,16 @@ export default {
     bg-transparent
     group-data-[prefix-icon]:!pl-0
     group-data-[suffix-icon]:!pr-0
-
     ${
       "" /** === ⚠️ CAUTION: Tailwind Forms Overrides === 
     These are overrides for the Tailwind Forms plugin. You should include them in case
     your theme user has the plugin enabled so that its styles don't conflict with your theme.
     */
     }
-    border-none focus:ring-0
+    border-none 
+    focus:ring-0
+
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
   `,
   selectionWrapper: ` ${
     "" /* autocomplete (selection-appearance: option), dropdown (single) */
@@ -62,6 +69,8 @@ export default {
     flex
     items-center
     text-$colorTemperature-$colorTemperatureStrength
+
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
   `,
   selection: ` ${
     "" /* autocomplete (selection-appearance: option), dropdown (single) */
@@ -69,6 +78,8 @@ export default {
     grow
     text-$colorTemperature-$colorTemperatureStrength
     group-data-[multiple]:p-$spacing
+
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
   `,
   tagsWrapper: ` ${"" /* dropdown, taglist */}
     w-full
@@ -104,6 +115,9 @@ export default {
     bg-$accentColor-900
     $radius
     text-white
+
+    dark:bg-$accentColor-100
+    dark:text-black
   `,
   tagLabel: ` ${"" /* dropdown, taglist */}
   `,
@@ -115,6 +129,8 @@ export default {
     items-center
     text-$colorTemperature-$colorTemperatureStrength
     z-10
+
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
   `,
   removeSelection: `
     ${
@@ -132,6 +148,8 @@ export default {
     items-center
     text-$colorTemperature-$colorTemperatureStrength
     z-10
+
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
 
     ${
       "" /** === ⚠️ CAUTION: Styling the tag close button === 
@@ -180,6 +198,9 @@ export default {
     border
     border-$colorTemperature-$colorTemperatureStrength
     empty:hidden
+
+    dark:bg-$colorTemperature-900
+    dark:border-$colorTemperature-$colorTemperatureStrengthDark
   `,
   listitem: `
     relative
@@ -193,7 +214,6 @@ export default {
     text-$scale
     aria-selected:!bg-$accentColor-100
     data-[is-active]:bg-$accentColor-100
-
     ${"" /* keyboard focus on active items */}
     before:content-['']
     before:absolute
@@ -201,6 +221,11 @@ export default {
     data-[is-active]:aria-selected:before:ring-2
     data-[is-active]:aria-selected:before:ring-inset
     data-[is-active]:aria-selected:before:ring-$accentColor-300
+
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
+    dark:aria-selected:!bg-$accentColor-700
+    dark:data-[is-active]:bg-$accentColor-700
+    dark:data-[is-active]:aria-selected:before:ring-$accentColor-400
   `,
   selectedIcon: `
     flex
@@ -213,6 +238,8 @@ export default {
     w-[0.75em]
     shrink-0
     [&>svg]:w-full
+
+    dark:text-$accentColor-400
   `,
   option: `
     ml-[1.25em]
@@ -227,6 +254,8 @@ export default {
     last:pb-$spacing
     text-$colorTemperature-$colorTemperatureStrength
     text-$scale(-1)
+
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
   `,
   emptyMessageInner: ``,
   help: ``,

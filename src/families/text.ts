@@ -38,9 +38,11 @@ export default {
   label: ``,
   prefixIcon: `
     text-$colorTemperature-600
+    dark:text-$colorTemperature-400
   `,
   suffixIcon: `
     text-$colorTemperature-600
+    dark:text-$colorTemperature-400
   `,
   inner: `
     text-$scale 
@@ -69,6 +71,8 @@ export default {
     }
     focus-within:ring-2 
     group-data-[disabled]:!cursor-not-allowed
+
+    dark:border-$colorTemperature-$colorTemperatureStrengthDark
   `,
   input: `
     text-$scale 
@@ -85,6 +89,8 @@ export default {
     */
     }
     border-none p-0 focus:ring-0
+
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
   `,
   help: ``,
   messages: ``,

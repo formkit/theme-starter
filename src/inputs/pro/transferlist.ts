@@ -8,6 +8,9 @@ export default {
     ${"" /** drag-and-drop specific styling for descendant items */}
     [&_.dnd-placeholder]:bg-$accentColor-$accentColorStrength
     &_.dnd-placeholder]:text-white
+
+    dark:[&_.dnd-placeholder]:bg-$accentColor-$accentColorStrengthDark
+    dark:[&_.dnd-placeholder]:text-$colorTemperature-900
   `,
   fieldset: ``,
   legend: ``,
@@ -51,6 +54,8 @@ export default {
     select-none ${
       "" /** prevent text selection on the transferlist — probably want to do this because it supports drag-and-drop */
     }
+
+    dark:border-$colorTemperature-$colorTemperatureStrengthDark
   `,
   transferlistHeader: `
     flex
@@ -62,6 +67,9 @@ export default {
     border-$colorTemperature-$colorTemperatureStrength
     py-$spacing
     px-$spacing(1,*)
+
+    dark:border-$colorTemperature-$colorTemperatureStrengthDark
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
   `,
   transferlistHeaderLabel: ``,
   transferlistHeaderItemCount: `
@@ -69,6 +77,8 @@ export default {
     text-xs
     text-center
     text-$colorTemperature-$colorTemperatureStrength
+
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
   `,
   transferlistControls: ` ${
     "" /** container for search control in transferist source list header */
@@ -76,6 +86,8 @@ export default {
     p-$spacing
     border-b
     border-$colorTemperature-$colorTemperatureStrength
+
+    dark:border-$colorTemperature-$colorTemperatureStrengthDark
   `,
   transferlistSearch: ``,
   transferlistSearchInput: `
@@ -89,6 +101,9 @@ export default {
     bg-transparent
     outline-none
     text-$scale(-1,*)
+
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
+    dark:border-$colorTemperature-$colorTemperatureStrengthDark
   `,
   transferlistSearchClear: ``,
   closeIcon: ``,
@@ -109,12 +124,20 @@ export default {
     flex
     items-center
     pl-[1.5em]
+
+    dark:bg-$colorTemperature-900
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
+    dark:aria-selected:bg-$accentColor-700
+    dark:data-[is-active=true]:bg-$accentColor-700
+    dark:ring-$colorTemperature-$colorTemperatureStrengthDark
   `,
   selectedIcon: `
     absolute
     w-[0.75em]
     left-[0.5em]
     text-$accentColor-$accentColorStrength
+
+    dark:text-$accentColor-$accentColorStrengthDark
   `,
   transferlistOption: `
     text-$scale(-1,*)
@@ -144,6 +167,8 @@ export default {
     my-$spacing
     text-center
     text-$colorTemperature-$colorTemperatureStrength
+
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
   `,
   sourceLoadMore: ``,
   sourceLoadMoreInner: ``,
@@ -163,6 +188,8 @@ export default {
     my-$spacing
     text-center
     text-$colorTemperature-$colorTemperatureStrength
+
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
   `,
   targetLoadMore: ``,
 
@@ -186,6 +213,8 @@ export default {
     overflow-clip
     my-$spacing
     mx-auto
+
+    dark:border-$colorTemperature-$colorTemperatureStrengthDark
 
     ${
       "" /** === ⚠️ CAUTION: Responsive Styles === 
@@ -215,6 +244,9 @@ export default {
     disabled:!text-$colorTemperature-400
     p-$spacing(2)
     disabled:opacity-50
+
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
+    dark:disabled:!text-$colorTemperature-500
   `,
   transferButtonForwardAll: ``,
   transferButtonForward: ``,

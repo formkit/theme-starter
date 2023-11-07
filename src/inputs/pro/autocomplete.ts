@@ -10,7 +10,6 @@ export default {
   input: ``,
   selections: `
     flex
-
     ${
       "" /** === ⚠️ CAUTION: selection appearance option — single === 
     (Usually) with a single value set to appearance "option" we want to make sure the
@@ -19,7 +18,6 @@ export default {
     }
     absolute
     inset-0
-
     ${
       "" /** === ⚠️ CAUTION: selection appearance option — multiple === 
     (Usually) with a multiple value set to appearance "option" we want to make sure the
@@ -39,6 +37,9 @@ export default {
     group-data-[multiple]:mb-$spacing(-1)
     outline-none
     data-[active-selection=true]:ring-2
+
+    dark:bg-$colorTemperature-700
+    dark:group-data-[multiple]:border-$colorTemperature-$colorTemperatureStrengthDark
   `,
   selection: `
     $radius 

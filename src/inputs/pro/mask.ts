@@ -13,6 +13,7 @@ export default {
   suffixIcon: ``,
   input: `
     group-data-[has-overlay]:!caret-$colorTemperature-$colorTemperatureStrength
+    dark:group-data-[has-overlay]:!caret-$colorTemperature-$colorTemperatureStrengthDark
   `,
   overlay: ``,
   overlayInner: ``,

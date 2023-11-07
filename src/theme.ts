@@ -115,7 +115,7 @@ export default createTheme({
      * users can filter according to their project needs.
      */
     lightMode: true,
-    darkMode: false,
+    darkMode: true,
   },
   /**
    * === Variables ===
@@ -169,10 +169,12 @@ export default createTheme({
      *
      * To do so, simply assign a string value to the variable name.
      */
-    accentColor: "gray",
+    accentColor: "neutral",
     accentColorStrength: "900",
-    colorTemperature: "gray",
+    accentColorStrengthDark: "100",
+    colorTemperature: "neutral",
     colorTemperatureStrength: "900",
+    colorTemperatureStrengthDark: "100",
     inputMaxWidth: "max-w-[20em]",
 
     /**

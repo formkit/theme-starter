@@ -8,9 +8,11 @@ export default {
   label: ``,
   prefixIcon: `
     text-$colorTemperature-$colorTemperatureStrength
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
   `,
   suffixIcon: `
     text-$colorTemperature-$colorTemperatureStrength
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
   `,
   input: `
     flex
@@ -26,6 +28,9 @@ export default {
     group-data-[prefix-icon]:pl-$spacing(5,*)
     group-data-[suffix-icon]:pr-$spacing(5,*)
     focus:ring-2
+
+    dark:border-$colorTemperature-$colorTemperatureStrengthDark
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
   `,
   help: ``,
   messages: ``,

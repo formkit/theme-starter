@@ -7,14 +7,15 @@ export default {
   `,
   prefixIcon: `
     text-$colorTemperature-600
+    dark:text-$colorTemperature-400
   `,
   suffixIcon: `
     text-$colorTemperature-600
+    dark:text-$colorTemperature-400
   `,
   sliderInner: `
     flex
     items-center
-
     ${
       "" /** === ⚠️ CAUTION: Nested number inputs === 
     The slider input can optionally show nested number inputs for the min and max values.
@@ -25,7 +26,6 @@ export default {
     [&>[data-type=number]]:ml-$spacing(2)
     [&>[data-type=number]]:shrink
     [&>[data-type=number]]:grow-0
-
     ${
       "" /** === ⚠️ CAUTION: Increasing bottom margin to account for marks === 
     This is a pretty wild selector, but what it's doing is increasing the bottom spacing 
@@ -60,11 +60,16 @@ export default {
     h-full
     bg-$colorTemperature-400
     data-[active=true]:bg-$colorTemperature-$colorTemperatureStrength
+
+    dark:bg-$colorTemperature-700
+    dark:data-[active=true]:bg-$colorTemperature-$colorTemperatureStrengthDark
   `,
   trackWrapper: `
     $radius
     bg-$colorTemperature-200
     px-1 ${"" /** pad the track to create buffer for marks */}
+
+    dark:bg-$colorTemperature-700
   `,
   trackInner: `
     relative
@@ -79,6 +84,8 @@ export default {
       "" /** pull the track highlight back out equal to the wrapper padding */
     }
     bg-$accentColor-$accentColorStrength
+
+    dark:bg-$accentColor-$accentColorStrengthDark
   `,
   marks: `
     absolute 
@@ -95,6 +102,9 @@ export default {
     -translate-y-1/2
     bg-$colorTemperature-$colorTemperatureStrength
     data-[active=true]:bg-white
+
+    dark:bg-$colorTemperature-400
+    dark:data-[active=true]:bg-$colorTemperature-600
   `,
   markLabel: `
     absolute
@@ -103,6 +113,8 @@ export default {
     text-$colorTemperature-$colorTemperatureStrength
     text-$scale(-2,*)
     -translate-x-1/2
+
+    dark:text-$colorTemperature-400
   `,
   handles: ``,
   handle: `
@@ -146,12 +158,14 @@ export default {
     leading-none
     whitespace-nowrap
     $radius(0,rounded-none,rounded) ${"" /** Don't go full rounded */}
-
     opacity-0 ${"" /** hide the tooltip by default */}
     transition-opacity
     group-hover:opacity-100
     group-focus-visible/handle:opacity-100
     group-data-[show-tooltip=true]/handle:opacity-100
+
+    dark:bg-$accentColor-$accentColorStrengthDark
+    dark:text-$colorTemperature-900
 
     ${"" /** tooltip triangle styles */}
     after:content-[""]
@@ -162,7 +176,9 @@ export default {
     after:-translate-y-[1px]
     after:border-4
     after:border-transparent
-    after:border-t-$accentColor-600
+    after:border-t-$accentColor-$accentColorStrength
+
+    dark:after:border-t-$accentColor-$accentColorStrengthDark
   `,
   linkedValues: `
     flex 

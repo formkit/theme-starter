@@ -4,17 +4,32 @@ export default {
   outer: ``,
   wrapper: ``,
   label: ``,
-  inner: "py-$spacing pr-0 pl-0",
+  inner: `
+    py-$spacing 
+    pr-0 
+    pl-0
+  `,
   prefixIcon: ``,
   suffixIcon: ``,
-  tags: "pl-$spacing(2,2,4)",
+  tags: `
+    pl-$spacing(2,2,4)
+  `,
   tagWrapper: ``,
   tag: ``,
   tagLabel: ``,
   removeSelection: ``,
-  input: "!p-0 !w-[0%] min-w-[1em] inline-block mb-$spacing(-2)",
+  input: `
+    !p-0
+    !w-[0%]
+    min-w-[1em]
+    inline-block
+    mb-$spacing(-2)
+  `,
   loaderIcon: ``,
-  listboxButton: "ml-auto shrink-0",
+  listboxButton: `
+    ml-auto 
+    shrink-0
+  `,
   selectIcon: ``,
   dropdownWrapper: ``,
   listbox: ``,

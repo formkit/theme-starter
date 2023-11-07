@@ -35,10 +35,14 @@ export default {
     [&::-webkit-slider-runnable-track]:h-1.5
     [&::-webkit-slider-runnable-track]:$radius
 
+    dark:[&::-webkit-slider-runnable-track]:bg-$colorTemperature-700
+
     ${"" /* moz styles - track */}
     [&::-moz-range-track]:bg-$colorTemperature-300
     [&::-moz-range-track]:h-1.5
     [&::-moz-range-track]:$radius
+
+    dark:[&::-moz-range-track]:bg-$colorTemperature-700
 
     ${"" /* webkit styles - thumb */}
     [&::-webkit-slider-thumb]:appearance-none
@@ -51,6 +55,8 @@ export default {
     [&::-webkit-slider-thumb]:-translate-y-1/2
     [&::-webkit-slider-thumb]:focus-visible:ring-2
 
+    dark:[&::-webkit-slider-thumb]:bg-$accentColor-400
+
     ${"" /* moz styles - thumb */}
     [&::-moz-range-thumb]:appearance-none
     [&::-moz-range-thumb]:border-none
@@ -59,6 +65,8 @@ export default {
     [&::-moz-range-thumb]:bg-$accentColor-600
     [&::-moz-range-thumb]:rounded-full
     [&::-moz-range-thumb]:focus-visible:ring-2
+
+    dark:[&::-moz-range-thumb]:bg-$accentColor-400
   `,
   help: ``,
   messages: ``,

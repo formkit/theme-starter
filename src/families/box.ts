@@ -41,6 +41,9 @@ export default {
     peer-checked:text-$accentColor-$accentColorStrength
     peer-disabled:cursor-not-allowed
     peer-focus:ring-2
+
+    dark:border-$colorTemperature-$colorTemperatureStrengthDark
+    dark:peer-checked:text-$accentColor-$accentColorStrengthDark
   `,
   decoratorIcon: `
     absolute
@@ -82,6 +85,8 @@ export default {
     text-$scale(-2,*)
     -mt-1
     mb-$spacing(-2)
+
+    dark:text-$colorTemperature-400
   `,
   messages: ``,
   message: ``,

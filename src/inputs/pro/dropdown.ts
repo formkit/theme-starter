@@ -21,6 +21,9 @@ export default {
     group-data-[prefix-icon]:!pl-0
     group-data-[suffix-icon]:!pr-0
     data-[placeholder]:text-$colorTemperature-400
+
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
+    dark:data-[placeholder]:text-$colorTemperature-500
   `,
   placeholder: `
     grow
@@ -65,6 +68,9 @@ export default {
     px-$spacing(-2,*) 
     shrink-0 
     my-auto
+
+    dark:bg-$colorTemperature-$colorTemperatureStrengthDark
+    dark:text-$colorTemperature-900
   `,
   tagsWrapper: ``,
   tags: ``,

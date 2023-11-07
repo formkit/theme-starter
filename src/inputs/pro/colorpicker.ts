@@ -64,6 +64,8 @@ export default {
     font-mono ${
       "" /** Monospaced font is recommended so that the input does not change size as the user selects values */
     }
+
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
   `,
   panel: `
     ${
@@ -90,6 +92,8 @@ export default {
     bg-white
     p-$spacing
 
+    dark:bg-$colorTemperature-900
+
     ${
       "" /** === ⚠️ CAUTION: Panel inline ===
       When the colorpicker is inline we want to override some of the default panel styles
@@ -102,6 +106,8 @@ export default {
     group-data-[inline]:bg-transparent
     group-data-[inline]:border
     border-$colorTemperature-$colorTemperatureStrength
+
+    dark:border-$colorTemperature-$colorTemperatureStrengthDark
 
     ${
       "" /** === ⚠️ CAUTION: Mobile touch styles ===
@@ -128,6 +134,9 @@ export default {
     border-b
     border-$colorTemperature-$colorTemperatureStrength
     pb-$spacing
+
+    dark:text-$colorTemperature-100
+    dark:border-$colorTemperature-$colorTemperatureStrengthDark
   `,
   closeIcon: `
     w-[1.75rem]
@@ -136,6 +145,8 @@ export default {
     $radius
     border
     border-$colorTemperature-$colorTemperatureStrength
+
+    dark:border-$colorTemperature-$colorTemperatureStrengthDark
 
     ${
       "" /** === ⚠️ CAUTION: Styling nested SVG === 
@@ -167,6 +178,8 @@ export default {
     focus-visible:outline-none
     focus-visible:ring-2
     
+    dark:bg-$colorTemperature-900
+
     ${
       "" /** === ⚠️ CAUTION: prevent-focus-styles ===
       Sometimes browsers have a real hard time knowing when to apply focus styles — and they do 
@@ -204,7 +217,6 @@ export default {
     }
     grid
     [grid-template-areas:'a_a_a'_'b_c_e'_'b_d_e']
-
     mb-$spacing
   `,
   LS: `
@@ -232,7 +244,6 @@ export default {
     aspect-square
     overflow-hidden
     $radius
-
     ${
       "" /** === ⚠️ CAUTION: Creating an inset shadow on color swatch canvas === 
       By using pseudo elements we can create an inset shadow on the preview canvas without the need
@@ -298,6 +309,9 @@ export default {
     border
     border-$colorTemperature-$colorTemperatureStrength
     text-$colorTemperature-$colorTemperatureStrength 
+
+    dark:border-$colorTemperature-$colorTemperatureStrengthDark
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
   `,
   eyeDropperIcon: `
     w-auto 
@@ -323,7 +337,6 @@ export default {
     justify-center
     w-full
     mr-$spacing(-2)
-
     ${
       "" /** === ⚠️ CAUTION: Nested input styles === 
     The colorpicker has nested inputs that are used to display the current color value in various formats.
@@ -349,17 +362,25 @@ export default {
     max-[431px]:[&>input]:text-base ${
       "" /** prevent zoom on mobile touch devices */
     }
+
+    dark:[&>input]:text-$colorTemperature-$colorTemperatureStrengthDark
+    dark:[&>input]:border-$colorTemperature-$colorTemperatureStrengthDark
   `,
   colorField: `
     bg-transparent
     text-$colorTemperature-$colorTemperatureStrength
     border
     border-$colorTemperature-$colorTemperatureStrength
+
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
+    dark:border-$colorTemperature-$colorTemperatureStrengthDark
   `,
   fieldLabel: `
     text-$scale(-2,*) 
     text-$colorTemperature-$colorTemperatureStrength
     mt-$spacing
+
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
   `,
   formatSwitcher: `
     flex
@@ -370,6 +391,8 @@ export default {
     mt-0.5
     text-$colorTemperature-$colorTemperatureStrength
     select-none
+
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
   `,
   switchIcon: `
     [&>svg]:w-3
@@ -389,6 +412,8 @@ export default {
     overflow-auto
     max-h-[200px]
     select-none
+
+    dark:border-$colorTemperature-$colorTemperatureStrengthDark
 
     ${
       "" /* special styling for when the swatch section is the
@@ -411,6 +436,8 @@ export default {
     w-full
     text-$scale(-1,*)
     text-$colorTemperature-$colorTemperatureStrength
+
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
   `,
   swatch: `
     ${"" /* base styles */} 
@@ -428,6 +455,8 @@ export default {
     before:shadow-[inset_0_0_0_1px_rgba(0,0,0,0.2)]
     before:pointer-events-none 
     before:z-[2]
+
+    dark:before:shadow-[inset_0_0_0_1px_rgba(255,255,255,0.2)]
 
     ${"" /* active indicator styles */}
     data-[active=true]:after:content-['']

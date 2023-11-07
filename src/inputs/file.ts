@@ -52,6 +52,8 @@ export default {
     min-w-0 ${"" /** allows the section to shrink when needed */}
     items-center
     text-$colorTemperature-$colorTemperatureStrength
+
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
   `,
   fileName: `
     truncate ${"" /** recommended */}
@@ -72,11 +74,9 @@ export default {
     peer-data-[has-multiple]:shrink-0 ${
       "" /** prevents wrapping for remove text */
     }
-
     ${"" /** override browser default styles for button */}
     appearance-none
     outline-none
-
     ${
       "" /** === ⚠️ CAUTION: File remove z-index === 
     If we do not bump up the z-index of the remove section then it will not be 
@@ -85,6 +85,8 @@ export default {
     }
     relative 
     z-20
+
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
   `,
   fileRemoveIcon: `
     block 
@@ -96,6 +98,8 @@ export default {
     w-full
     items-center
     text-$colorTemperature-$colorTemperatureStrength
+
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
   `,
   noFilesIcon: `
     w-[1em]

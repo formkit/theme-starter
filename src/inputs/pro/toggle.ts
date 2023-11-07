@@ -17,6 +17,8 @@ export default {
     mb-$spacing(-1)
     text-$scale(-2,*)
     text-$colorTemperature-$colorTemperatureStrength
+
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
   `,
   inner: `
     inline-block 
@@ -38,7 +40,6 @@ export default {
     transition-all
     bg-$colorTemperature-400
     peer-focus-visible:ring-2
-
     ${
       "" /** === ⚠️ CAUTION: thumb positioning === 
     Since the track is the sibling to the actual input for a toggle we need to use descendant 
@@ -48,7 +49,6 @@ export default {
     peer-checked:bg-$accentColor-$accentColorStrength
     peer-checked:[&>div:last-child]:left-full
     peer-checked:[&>div:last-child]:-translate-x-full
-
     ${
       "" /** === ⚠️ CAUTION: value label position ===
       We need to move the value label when the input is checked. This selector is complicated, but
@@ -57,6 +57,9 @@ export default {
     }
     peer-checked:[&>div:first-child:not(:last-child)]:left-0 
     peer-checked:[&>div:first-child:not(:last-child)]:translate-x-0
+
+    dark:bg-$colorTemperature-600
+    dark:peer-checked:bg-$accentColor-$accentColorStrengthDark
   `,
   innerLabel: `
     absolute
@@ -69,6 +72,8 @@ export default {
     px-1 ${
       "" /** keeps the inner label from touching the absolute edge of the input inner */
     }
+
+    dark:text-$colorTemperature-900
   `,
   thumb: `
     relative
@@ -80,12 +85,17 @@ export default {
     transition-all
     bg-white
     text-$colorTemperature-$colorTemperatureStrength
+
+    dark:bg-$colorTemperature-900
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
   `,
   thumbIcon: ``,
   valueLabel: `
     font-bold
     text-$scale(-2,*)
     text-$colorTemperature-$colorTemperatureStrength
+
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
   `,
   label: `
     peer-first:mb-0 ${

@@ -9,7 +9,9 @@ export default {
   legend: `
     mb-$spacing
   `,
-  help: "mb-$spacing -mt-1",
+  help: `
+    mb-$spacing -mt-1
+  `,
   inner: ``,
   items: ``,
   item: `
@@ -19,6 +21,8 @@ export default {
     border
     border-$colorTemperature-$colorTemperatureStrength
     $radius(0,rounded-none,rounded-2xl) ${"" /** Don't go full rounded */}
+
+    dark:border-$colorTemperature-$colorTemperatureStrengthDark
   `,
   content: `
     min-w-0
@@ -56,21 +60,46 @@ export default {
     [&>li]:justify-center
     [&>li]:aspect-square
     [&>li]:text-$colorTemperature-500
-    [&>li]:hover:text-$accentColor-600
-    [&>li]:disabled:hover:text-inherit
-    [&>li]:disabled:opacity-25
-    [&>li]:disabled:!text-$colorTemperature-500 
+    [&>li:hover]:text-$accentColor-600
+    [&>li_[disabled]]:opacity-25
+    [&>li_[disabled]]:!text-$colorTemperature-500 
+
+    dark:[&>li]:text-$colorTemperature-500
+    dark:[&>li:hover]:text-$accentColor-200
   `,
   upControl: ``,
   removeControl: ``,
   insertControl: ``,
   downControl: ``,
-  controlLabel: "absolute opacity-0 pointer-events-none text-[0px]",
-  moveDownIcon: "block w-[0.75em] aspect-square",
-  moveUpIcon: "block w-[0.75em] aspect-square",
-  removeIcon: "block w-[1.25em] aspect-square",
-  addIcon: "block w-[1.25em] aspect-square",
-  addButton: "!mb-0",
+  controlLabel: `
+    absolute
+    opacity-0
+    pointer-events-none
+    text-[0px]
+  `,
+  moveDownIcon: `
+    block
+    w-[0.75em]
+    aspect-square
+  `,
+  moveUpIcon: `
+    block
+    w-[0.75em]
+    aspect-square
+  `,
+  removeIcon: `
+    block
+    w-[1.25em]
+    aspect-square
+  `,
+  addIcon: `
+    block
+    w-[1.25em]
+    aspect-square
+  `,
+  addButton: `
+    !mb-0
+  `,
   messages: ``,
   message: ``,
 };
