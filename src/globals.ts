@@ -10,6 +10,7 @@ export default {
     }
     group 
     $inputMaxWidth
+    flex-grow
     text-$scale
     mb-$spacing(4,0.5,4)
 
