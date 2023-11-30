@@ -14,6 +14,10 @@ export default {
     group-data-[vertical="true"]/options:w-full
     justify-center
 
+    disabled:opacity-50
+    disabled:cursor-not-allowed
+    group-data-[disabled]:disabled:opacity-100
+
     aria-[pressed="true"]:bg-$accentColor-$accentColorStrength
     aria-[pressed="true"]:text-white
     dark:aria-[pressed="true"]:bg-$accentColor-$accentColorStrengthDark
