@@ -17,12 +17,12 @@ export const multiStep = {
     group-data-[tab-style="tab"]/wrapper:overflow-auto
     group-data-[tab-style="tab"]/wrapper:border
     group-data-[tab-style="tab"]/wrapper:border-b-0
-    group-data-[tab-style="tab"]/wrapper:border-$colorTemperature-colorTemperatureStrength
+    group-data-[tab-style="tab"]/wrapper:border-$colorTemperature-$colorTemperatureStrength
     group-data-[tab-style="tab"]/wrapper:$radius(0,rounded-none,rounded-2xl)
     group-data-[tab-style="tab"]/wrapper:rounded-bl-none
     group-data-[tab-style="tab"]/wrapper:rounded-br-none
 
-    dark:group-data-[tab-style="tab"]/wrapper:border-$colorTemperature-colorTemperatureStrengthDark
+    dark:group-data-[tab-style="tab"]/wrapper:border-$colorTemperature-$colorTemperatureStrengthDark
 
     ${"" /** progress-style tabs */}
     group-data-[tab-style="progress"]/wrapper:my-$spacing(6,*)
@@ -47,7 +47,7 @@ export const multiStep = {
     group-data-[tab-style="tab"]/wrapper:px-$spacing(4,*)
     group-data-[tab-style="tab"]/wrapper:border-r
     group-data-[tab-style="tab"]/wrapper:border-b
-    group-data-[tab-style="tab"]/wrapper:border-$colorTemperature-colorTemperatureStrength
+    group-data-[tab-style="tab"]/wrapper:border-$colorTemperature-$colorTemperatureStrength
     group-data-[tab-style="tab"]/wrapper:last:border-r-0
     group-data-[tab-style="tab"]/wrapper:data-[active="true"]:bg-white
     group-data-[tab-style="tab"]/wrapper:data-[active="true"]:border-b-transparent
@@ -57,7 +57,7 @@ export const multiStep = {
     dark:group-data-[tab-style="tab"]/wrapper:bg-$colorTemperature-950/20
     dark:group-data-[tab-style="tab"]/wrapper:data-[active="true"]:bg-transparent
     dark:group-data-[tab-style="tab"]/wrapper:data-[active="true"]:border-b-transparent
-    dark:group-data-[tab-style="tab"]/wrapper:border-$colorTemperature-colorTemperatureStrengthDark(1,200,800)
+    dark:group-data-[tab-style="tab"]/wrapper:border-$colorTemperature-$colorTemperatureStrengthDark
 
     ${"" /** progress-style tabs */}
     group-data-[tab-style="progress"]/wrapper:flex
@@ -67,7 +67,7 @@ export const multiStep = {
     group-data-[tab-style="progress"]/wrapper:shrink-0
     group-data-[tab-style="progress"]/wrapper:relative
 
-    ${"" /** progress-style tabs badges */}
+    ${"" /** progress-style tabs step nodes */}
     group-data-[tab-style="progress"]/wrapper:before:block
     group-data-[tab-style="progress"]/wrapper:before:text-$scale(-1,*)
     group-data-[tab-style="progress"]/wrapper:before:w-[1.25rem]
@@ -78,7 +78,7 @@ export const multiStep = {
     group-data-[tab-style="progress"]/wrapper:before:bg-white
     group-data-[tab-style="progress"]/wrapper:before:z-10
 
-    dark:group-data-[tab-style="progress"]/wrapper:before:border-$colorTemperature-$colorTemperatureStrengthDark
+    dark:group-data-[tab-style="progress"]/wrapper:before:border-$colorTemperature-700
     dark:group-data-[tab-style="progress"]/wrapper:before:bg-$colorTemperature-950
 
     ${"" /** progress-style tabs connection lines */}
@@ -93,7 +93,7 @@ export const multiStep = {
     group-data-[tab-style="progress"]/wrapper:last:after:hidden
 
     dark:group-data-[tab-style="progress"]/wrapper:after:bg-$colorTemperature-700
-    dark:group-data-[tab-style="progress"]/wrapper:data-[valid="true"]:data-[visited="true"]:after:bg-green-500
+    dark:group-data-[tab-style="progress"]/wrapper:data-[valid="true"]:data-[visited="true"]:after:bg-$accentColor-300
   `,
   tabLabel: `
     ${"" /** progress-style tabs */}
@@ -118,7 +118,9 @@ export const multiStep = {
     [line-height:1.25rem]
     text-white
     rounded-full
-    group-data-[valid="true"]/tab:bg-$accentColor-900
+
+    dark:bg-$accentColor-300
+    dark:text-$colorTemperature-900
     
     group-data-[tab-style="tab"]/wrapper:text-[0.66rem]
     group-data-[tab-style="tab"]/wrapper:p-1.5
@@ -145,11 +147,11 @@ export const multiStep = {
     pb-$spacing(4,*)
     bg-white
     border
-    border-$colorTemperature-colorTemperatureStrength(-1,*)
+    border-$colorTemperature-$colorTemperatureStrength
     $radius(0,rounded-none,rounded-2xl)
 
     dark:bg-transparent
-    dark:border-$colorTemperature-colorTemperatureStrengthDark
+    dark:border-$colorTemperature-$colorTemperatureStrengthDark
     
     group-data-[tab-style="tab"]/wrapper:border-t-0
     group-data-[tab-style="tab"]/wrapper:rounded-tl-none

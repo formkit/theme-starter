@@ -4,7 +4,7 @@ import { FormKitKitchenSink } from "@formkit/vue";
 
 <template>
   <div>
-    <!-- <Suspense>
+    <Suspense>
       <FormKitKitchenSink :schemas="['form/login']" />
     </Suspense>
     <Suspense>
@@ -24,7 +24,7 @@ import { FormKitKitchenSink } from "@formkit/vue";
     </Suspense>
     <Suspense>
       <FormKitKitchenSink :schemas="['barcode']" />
-    </Suspense> -->
+    </Suspense>
     <Suspense>
       <FormKitKitchenSink :schemas="['multi-step']" />
     </Suspense>
