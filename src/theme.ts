@@ -38,6 +38,7 @@ import repeater from "./inputs/pro/repeater";
 import slider from "./inputs/pro/slider";
 import taglist from "./inputs/pro/taglist";
 import toggle from "./inputs/pro/toggle";
+import togglebuttons from "./inputs/pro/togglebuttons";
 import transferlist from "./inputs/pro/transferlist";
 // Addon input imports
 import barcode from "./inputs/addon/barcode";
@@ -110,6 +111,7 @@ export default createTheme({
       "slider",
       "taglist",
       "toggle",
+      "togglebuttons",
       "transferlist",
       // Addon inputs
       "barcode",
@@ -309,6 +311,7 @@ export default createTheme({
     slider: slider,
     taglist: taglist,
     toggle: toggle,
+    togglebuttons: togglebuttons,
     transferlist: transferlist,
 
     /** === ⚠️ CAUTION: Addon Inputs ===
