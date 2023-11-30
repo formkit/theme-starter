@@ -55,7 +55,8 @@ html.dark {
   grid-template-columns: repeat(auto-fit, 400px);
   margin-bottom: 4em;
 }
-.formkit-input-section[data-type="transferlist"] .formkit-specimen-group {
+.formkit-input-section[data-type="transferlist"] .formkit-specimen-group,
+.formkit-input-section[data-type="multi-step"] .formkit-specimen-group {
   grid-template-columns: repeat(auto-fit, 650px);
 }
 

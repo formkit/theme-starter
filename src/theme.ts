@@ -39,6 +39,9 @@ import slider from "./inputs/pro/slider";
 import taglist from "./inputs/pro/taglist";
 import toggle from "./inputs/pro/toggle";
 import transferlist from "./inputs/pro/transferlist";
+// Addon input imports
+import barcode from "./inputs/addon/barcode";
+import { multiStep, step } from "./inputs/addon/multi-step";
 
 /**
  * Welcome to the FormKit starter theme.
@@ -74,7 +77,7 @@ export default createTheme({
      * as required for their own projects.
      */
     supportedInputs: [
-      /* CORE */
+      // Core inputs
       "button",
       "checkbox",
       "color",
@@ -96,7 +99,7 @@ export default createTheme({
       "time",
       "url",
       "week",
-      /* PRO */
+      // Pro inputs
       "autocomplete",
       "colorpicker",
       "datepicker",
@@ -108,6 +111,9 @@ export default createTheme({
       "taglist",
       "toggle",
       "transferlist",
+      // Addon inputs
+      "barcode",
+      "multi-step",
     ],
     /**
      * === Light & Dark mode ===
@@ -304,5 +310,13 @@ export default createTheme({
     taglist: taglist,
     toggle: toggle,
     transferlist: transferlist,
+
+    /** === ⚠️ CAUTION: Addon Inputs ===
+     * These are additional optional add-on inputs for FormKit
+     * If your theme does not provide support for these inputs then you can remove them.
+     */
+    barcode: barcode,
+    "multi-step": multiStep,
+    step: step,
   },
 });
