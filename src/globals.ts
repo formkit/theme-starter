@@ -10,6 +10,7 @@ export default {
     }
     group 
     $inputMaxWidth
+    min-w-0 ${"" /** Allow input to shrink properly in Safari flex contexts */}
     flex-grow
     text-$scale
     mb-$spacing(4,0.5,4)

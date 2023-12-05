@@ -94,6 +94,7 @@ export default createTheme({
       "search",
       "select",
       "submit",
+      "summary", // error summary component for Forms https://formkit.com/inputs/form#validation-and-error-summary
       "tel",
       "text",
       "textarea",

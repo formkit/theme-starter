@@ -1,7 +1,7 @@
 import { createApp } from "vue";
 import "./style.css";
 import App from "./App.vue";
-import { plugin, defaultConfig } from "@formkit/vue";
+import { plugin, defaultConfig, FormKitSummary } from "@formkit/vue";
 import { genesisIcons } from "@formkit/icons";
 import { createMultiStepPlugin } from "@formkit/addons";
 import { barcode } from "@formkit/barcode";
@@ -26,4 +26,5 @@ const config = defaultConfig({
 
 const app = createApp(App);
 app.use(plugin, config);
+app.component("FormKitSummary", FormKitSummary);
 app.mount("#app");

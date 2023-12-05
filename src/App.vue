@@ -3,30 +3,7 @@ import { FormKitKitchenSink } from "@formkit/vue";
 </script>
 
 <template>
-  <div>
-    <Suspense>
-      <FormKitKitchenSink :schemas="['form/login']" />
-    </Suspense>
-    <Suspense>
-      <FormKitKitchenSink :schemas="['form/tshirt']" />
-    </Suspense>
-    <Suspense>
-      <FormKitKitchenSink :schemas="['form/survey']" />
-    </Suspense>
-    <Suspense>
-      <FormKitKitchenSink :schemas="['form/registration']" />
-    </Suspense>
-    <Suspense>
-      <FormKitKitchenSink :schemas="['form/application']" />
-    </Suspense>
-    <Suspense>
-      <FormKitKitchenSink :pro="true" />
-    </Suspense>
-    <Suspense>
-      <FormKitKitchenSink :schemas="['barcode']" />
-    </Suspense>
-    <Suspense>
-      <FormKitKitchenSink :schemas="['multi-step']" />
-    </Suspense>
-  </div>
+  <Suspense>
+    <FormKitKitchenSink />
+  </Suspense>
 </template>
