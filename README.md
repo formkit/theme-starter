@@ -12,4 +12,4 @@ npx formkit create-theme ThemeName
 
 ## Additional Documentation
 
-Read the documentation at [https://formkit.com/essentials/styling](https://formkit.com/essentials/styling) for a comprehensive overview of how to create your own FormKit theme.
+Read the documentation at [https://formkit.com/guides/create-a-tailwind-theme](https://formkit.com/guides/create-a-tailwind-theme) for a comprehensive overview of how to create your own FormKit theme.
