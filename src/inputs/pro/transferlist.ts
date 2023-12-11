@@ -125,12 +125,27 @@ export default {
     items-center
     pl-[1.5em]
 
+    ${
+      "" /** Drag and drop styles:
+      - dropZone
+      - selectionDropZone
+      - touchDropZone
+      - touchSelectionDropZone
+      - longTouch .*/
+    }
+    [&.formkit-dropZone]:bg-$accentColor-100
+    [&.formkit-selectionDropZone]:bg-$accentColor-100
+    [&.formkit-touchDropZone]:bg-$accentColor-100
+    [&.formkit-touchSelectionDropZone]:bg-$accentColor-100
+    [&.formkit-longTouch]:bg-$accentColor-100
+
     dark:bg-$colorTemperature-900
     dark:text-$colorTemperature-$colorTemperatureStrengthDark
     dark:aria-selected:bg-$accentColor-700
     dark:data-[is-active=true]:bg-$accentColor-700
     dark:ring-$colorTemperature-$colorTemperatureStrengthDark
   `,
+
   selectedIcon: `
     absolute
     w-[0.75em]
@@ -217,7 +232,7 @@ export default {
     dark:border-$colorTemperature-$colorTemperatureStrengthDark
 
     ${
-      "" /** === ⚠️ CAUTION: Responsive Styles === 
+      "" /** === ⚠️ CAUTION: Responsive Styles ===
     The transferlist input is a larger input that most that ship with FormKit
     so we need to consider responsive styles. By default the transferlist lists
     are stacked vertically on small screens and horizontally on larger screens.
@@ -253,47 +268,47 @@ export default {
   transferButtonBackward: ``,
   transferButtonBackwardAll: ``,
   fastForwardIcon: `
-    w-4 
-    flex 
-    select-none 
-    [&>svg]:m-auto 
-    [&>svg]:w-full 
-    [&>svg]:max-w-[1rem] 
-    [&>svg]:max-h-[1rem] 
-    rotate-90 
+    w-4
+    flex
+    select-none
+    [&>svg]:m-auto
+    [&>svg]:w-full
+    [&>svg]:max-w-[1rem]
+    [&>svg]:max-h-[1rem]
+    rotate-90
     sm:rotate-0
   `,
   moveRightIcon: `
-    w-4 
-    flex 
-    select-none 
-    [&>svg]:m-auto 
-    [&>svg]:w-full 
-    [&>svg]:max-w-[1rem] 
-    [&>svg]:max-h-[1rem] 
-    rotate-90 
+    w-4
+    flex
+    select-none
+    [&>svg]:m-auto
+    [&>svg]:w-full
+    [&>svg]:max-w-[1rem]
+    [&>svg]:max-h-[1rem]
+    rotate-90
     sm:rotate-0
   `,
   moveLeftIcon: `
-    w-4 
-    flex 
-    select-none 
-    [&>svg]:m-auto 
-    [&>svg]:w-full 
-    [&>svg]:max-w-[1rem] 
-    [&>svg]:max-h-[1rem] 
-    rotate-90 
+    w-4
+    flex
+    select-none
+    [&>svg]:m-auto
+    [&>svg]:w-full
+    [&>svg]:max-w-[1rem]
+    [&>svg]:max-h-[1rem]
+    rotate-90
     sm:rotate-0
   `,
   rewindIcon: `
-    w-4 
-    flex 
-    select-none 
-    [&>svg]:m-auto 
-    [&>svg]:w-full 
-    [&>svg]:max-w-[1rem] 
-    [&>svg]:max-h-[1rem] 
-    rotate-90 
+    w-4
+    flex
+    select-none
+    [&>svg]:m-auto
+    [&>svg]:w-full
+    [&>svg]:max-w-[1rem]
+    [&>svg]:max-h-[1rem]
+    rotate-90
     sm:rotate-0
   `,
   messages: `

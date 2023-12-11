@@ -32,7 +32,7 @@ export default {
   selectionWrapper: ``,
   selection: ` ${"" /** single selection dropdown */}
     ${
-      "" /** === ⚠️ CAUTION: Overriding option styles inside selection === 
+      "" /** === ⚠️ CAUTION: Overriding option styles inside selection ===
     The dropdown selection renders the same option template as the dropdown option list. However,
     in the selection styles we probably don't want the extra left margin that is applied to the option
     when it is in the list to account for the active icon.
@@ -44,7 +44,7 @@ export default {
     w-[85%] overflow-hidden
   `,
   selections: ` ${"" /** multi-selection dropdown */}
-    inline-flex 
+    inline-flex
     items-center
   `,
   selectionsItem: `
@@ -65,8 +65,8 @@ export default {
     tracking-tighter
     leading-0
     py-$spacing(-4,*)
-    px-$spacing(-2,*) 
-    shrink-0 
+    px-$spacing(-2,*)
+    shrink-0
     my-auto
 
     dark:bg-$colorTemperature-$colorTemperatureStrengthDark
@@ -74,7 +74,17 @@ export default {
   `,
   tagsWrapper: ``,
   tags: ``,
-  tagWrapper: ``,
+  tagWrapper: `
+  ${
+    "" /** Drag and drop styles:
+    - dropZone
+    - touchDropZone
+     .*/
+  }
+  [&.formkit-dropZone_.formkit-tag]:opacity-50
+  [&.formkit-touchDropZone_.formkit-tag]:opacity-50
+  `,
+
   tag: ``,
   tagLabel: ``,
   removeSelection: ``,
@@ -83,7 +93,7 @@ export default {
   `,
   dropdownWrapper: `
   ${
-    "" /** === ⚠️ CAUTION: Overscroll style === 
+    "" /** === ⚠️ CAUTION: Overscroll style ===
   The dropdown input supports an 'overscroll' behavior that allows the to scroll its option list
   over the input itself. This is a desired treatment for very long lists of options but it does require some
   special styling considerations.
