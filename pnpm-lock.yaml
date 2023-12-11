@@ -20,8 +20,8 @@ devDependencies:
     specifier: latest
     version: 1.4.0
   '@formkit/pro':
-    specifier: next
-    version: 0.118.1-58e7f8f(@typescript-eslint/parser@6.14.0)(postcss@8.4.31)
+    specifier: 0.118.1-a3908af
+    version: 0.118.1-a3908af(@typescript-eslint/parser@6.14.0)(postcss@8.4.31)
   '@formkit/theme-editor':
     specifier: latest
     version: 0.5.1
@@ -556,7 +556,7 @@ packages:
       ajv: 6.12.6
       debug: 4.3.4
       espree: 9.6.1
-      globals: 13.23.0
+      globals: 13.24.0
       ignore: 5.3.0
       import-fresh: 3.3.0
       js-yaml: 4.1.0
@@ -610,8 +610,8 @@ packages:
       '@formkit/utils': 1.4.0
     dev: true
 
-  /@formkit/drag-and-drop@0.0.4(@typescript-eslint/parser@6.14.0)(postcss@8.4.31):
-    resolution: {integrity: sha512-6A/UJ0HuZKbPoAMcC2tWYAX13Pg/uLBy3sWE+CQf7oGV95st1rcoDHg/G4PYBY9REOXS1uryBnxobD7E6zbVMQ==}
+  /@formkit/drag-and-drop@0.0.5(@typescript-eslint/parser@6.14.0)(postcss@8.4.31):
+    resolution: {integrity: sha512-1v0nkIU+5CO3SRUPJaPUzdUrk4koJKY6byVSCKP7i23y0a1PgUnROinD3r9yKgWWSEBXaGfghdE5oeUXxCJ3vg==}
     dependencies:
       '@typescript-eslint/eslint-plugin': 6.14.0(@typescript-eslint/parser@6.14.0)(eslint@8.55.0)(typescript@5.3.3)
       bumpp: 9.2.0
@@ -656,11 +656,11 @@ packages:
       '@formkit/utils': 1.4.0
     dev: true
 
-  /@formkit/pro@0.118.1-58e7f8f(@typescript-eslint/parser@6.14.0)(postcss@8.4.31):
-    resolution: {integrity: sha512-9areTckpCChIHz7vNQYdBadifMDTI6eu3r/hMz2uzO37qAt7aJWLQjUrzUICWhrVDj9prWakFxJyeaCMSf4BhA==}
+  /@formkit/pro@0.118.1-a3908af(@typescript-eslint/parser@6.14.0)(postcss@8.4.31):
+    resolution: {integrity: sha512-80ZROgHX0IUf/HNk6OanEvnFo3UcRyBwfW53JeCSvYQM95SLJ3Gpa0Xi5Ae4jJ2BgUq/BPxr3RidfNbtM8Nx7Q==}
     dependencies:
       '@formkit/core': 1.4.0
-      '@formkit/drag-and-drop': 0.0.4(@typescript-eslint/parser@6.14.0)(postcss@8.4.31)
+      '@formkit/drag-and-drop': 0.0.5(@typescript-eslint/parser@6.14.0)(postcss@8.4.31)
       '@formkit/inputs': 1.4.0
     transitivePeerDependencies:
       - '@microsoft/api-extractor'
@@ -684,7 +684,7 @@ packages:
     dependencies:
       '@formkit/core': 1.4.0
       '@formkit/utils': 1.4.0
-      postcss: 8.4.31
+      postcss: 8.4.32
       tailwind-merge: 1.14.0
       tailwindcss: 3.3.5
     transitivePeerDependencies:
@@ -1896,7 +1896,7 @@ packages:
       file-entry-cache: 6.0.1
       find-up: 5.0.0
       glob-parent: 6.0.2
-      globals: 13.23.0
+      globals: 13.24.0
       graphemer: 1.4.0
       ignore: 5.3.0
       imurmurhash: 0.1.4
@@ -2123,6 +2123,13 @@ packages:
 
   /globals@13.23.0:
     resolution: {integrity: sha512-XAmF0RjlrjY23MA51q3HltdlGxUpXPvg0GioKiD9X6HD28iMjo2dKC8Vqwm7lne4GNr78+RHTfliktR6ZH09wA==}
+    engines: {node: '>=8'}
+    dependencies:
+      type-fest: 0.20.2
+    dev: true
+
+  /globals@13.24.0:
+    resolution: {integrity: sha512-AhO5QUcj8llrbG09iWhPU2B204J1xnPeL8kQmVorSsy+Sjj1sk8gIyh6cUocGmH4L0UuhAJy+hJMRA4mgA4mFQ==}
     engines: {node: '>=8'}
     dependencies:
       type-fest: 0.20.2
@@ -2678,6 +2685,14 @@ packages:
 
   /postcss@8.4.31:
     resolution: {integrity: sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==}
+    engines: {node: ^10 || ^12 || >=14}
+    dependencies:
+      nanoid: 3.3.7
+      picocolors: 1.0.0
+      source-map-js: 1.0.2
+
+  /postcss@8.4.32:
+    resolution: {integrity: sha512-D/kj5JNu6oo2EIy+XL/26JEDTlIbB8hw85G8StOE6L74RQAVVP5rej6wxCNqyMbR4RkPfqvezVbPw81Ngd6Kcw==}
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
       nanoid: 3.3.7

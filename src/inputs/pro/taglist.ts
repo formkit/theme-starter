@@ -5,8 +5,8 @@ export default {
   wrapper: ``,
   label: ``,
   inner: `
-    py-$spacing 
-    pr-0 
+    py-$spacing
+    pr-0
     pl-0
   `,
   prefixIcon: ``,
@@ -14,7 +14,11 @@ export default {
   tags: `
     pl-$spacing(2,2,4)
   `,
-  tagWrapper: ``,
+  tagWrapper: `
+  ${"" /** Drag and drop styles */}
+  [&.formkit-dropZone_.formkit-tag]:opacity-50
+  [&.formkit-touchDropZone_.formkit-tag]:opacity-50
+  `,
   tag: ``,
   tagLabel: ``,
   removeSelection: ``,
@@ -27,7 +31,7 @@ export default {
   `,
   loaderIcon: ``,
   listboxButton: `
-    ml-auto 
+    ml-auto
     shrink-0
   `,
   selectIcon: ``,

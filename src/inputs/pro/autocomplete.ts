@@ -11,7 +11,7 @@ export default {
   selections: `
     flex
     ${
-      "" /** === ⚠️ CAUTION: selection appearance option — single === 
+      "" /** === ⚠️ CAUTION: selection appearance option — single ===
     (Usually) with a single value set to appearance "option" we want to make sure the
     selection is positioned over top of the input
     */
@@ -19,7 +19,7 @@ export default {
     absolute
     inset-0
     ${
-      "" /** === ⚠️ CAUTION: selection appearance option — multiple === 
+      "" /** === ⚠️ CAUTION: selection appearance option — multiple ===
     (Usually) with a multiple value set to appearance "option" we want to make sure the
     selection is presented as a list below the input.
     */
@@ -40,15 +40,21 @@ export default {
 
     dark:bg-$colorTemperature-700
     dark:group-data-[multiple]:border-$colorTemperature-$colorTemperatureStrengthDark
+
+    ${"" /** Drag and drop styles */}
+    [&.formkit-dropZone]:opacity-50
+    [&.formkit-touchDropZone]:opacity-50
+    [&.formkit-touchDragging]:!flex
+    [&.formkit-longTouch]:opacity-50
   `,
   selection: `
-    $radius 
-    pl-$spacing 
+    $radius
+    pl-$spacing
 
     ${
-      "" /** === ⚠️ CAUTION: Nested 'option' section within 'selection' section === 
+      "" /** === ⚠️ CAUTION: Nested 'option' section within 'selection' section ===
     When selection appearance is set to 'option' an option section will be rendered within the 'selection' wrapper.
-    We probably want to remove styles that made sense when the option was being rendered inside a listbox that 
+    We probably want to remove styles that made sense when the option was being rendered inside a listbox that
     no longer make sense when being rendered inside the selection wrapper.
     */
     }

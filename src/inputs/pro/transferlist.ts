@@ -138,6 +138,7 @@ export default {
     dark:data-[is-active=true]:bg-$accentColor-700
     dark:ring-$colorTemperature-$colorTemperatureStrengthDark
   `,
+
   selectedIcon: `
     absolute
     w-[0.75em]
