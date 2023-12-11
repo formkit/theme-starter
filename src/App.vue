@@ -4,6 +4,6 @@ import { FormKitKitchenSink } from "@formkit/vue";
 
 <template>
   <Suspense>
-    <FormKitKitchenSink />
+    <FormKitKitchenSink :schemas="['transferlist']" />
   </Suspense>
 </template>
