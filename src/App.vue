@@ -4,6 +4,6 @@ import { FormKitKitchenSink } from "@formkit/vue";
 
 <template>
   <Suspense>
-    <FormKitKitchenSink :schemas="['autocomplete']" />
+    <FormKitKitchenSink :schemas="['taglist']" />
   </Suspense>
 </template>

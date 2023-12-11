@@ -75,7 +75,12 @@ export default {
   tagsWrapper: ``,
   tags: ``,
   tagWrapper: `
-  ${"" /** Drag and drop styles */}
+  ${
+    "" /** Drag and drop styles:
+    - dropZone
+    - touchDropZone
+     .*/
+  }
   [&.formkit-dropZone_.formkit-tag]:opacity-50
   [&.formkit-touchDropZone_.formkit-tag]:opacity-50
   `,

@@ -41,7 +41,13 @@ export default {
     dark:bg-$colorTemperature-700
     dark:group-data-[multiple]:border-$colorTemperature-$colorTemperatureStrengthDark
 
-    ${"" /** Drag and drop styles */}
+    ${
+      "" /** Drag and drop styles:
+      - dropZone
+      - touchDropZone
+      - touchDragging
+      - longTouch .*/
+    }
     [&.formkit-dropZone]:opacity-50
     [&.formkit-touchDropZone]:opacity-50
     [&.formkit-touchDragging]:!flex

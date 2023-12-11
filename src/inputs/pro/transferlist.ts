@@ -125,7 +125,14 @@ export default {
     items-center
     pl-[1.5em]
 
-    ${"" /** Drag and drop styles */}
+    ${
+      "" /** Drag and drop styles:
+      - dropZone
+      - selectionDropZone
+      - touchDropZone
+      - touchSelectionDropZone
+      - longTouch .*/
+    }
     [&.formkit-dropZone]:bg-$accentColor-100
     [&.formkit-selectionDropZone]:bg-$accentColor-100
     [&.formkit-touchDropZone]:bg-$accentColor-100
