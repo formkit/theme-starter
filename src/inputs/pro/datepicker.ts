@@ -12,6 +12,20 @@ export default {
   `,
   prefixIcon: ``,
   suffixIcon: ``,
+  removeSelection: ``,
+  clearIcon: `
+    flex
+    items-center
+    ml-$spacing(-2,0,1.5)
+    mr-$spacing
+    text-$colorTemperature-$colorTemperatureStrength
+    text-$scale
+    text-$scale
+    w-[0.75em]
+    h-[0.75em]
+    shrink-0
+    [&>svg]:w-full
+  `,
   overlay: ``,
   overlayInner: ``,
   overlayPlaceholder: ``,
