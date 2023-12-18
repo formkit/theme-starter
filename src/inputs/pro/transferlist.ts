@@ -89,24 +89,36 @@ export default {
 
     dark:border-$colorTemperature-$colorTemperatureStrengthDark
   `,
-  transferlistSearch: ``,
-  transferlistSearchInput: `
-    text-$colorTemperature-$colorTemperatureStrength
+  transferlistSearch: `
     border
-    border-$colorTemperature-$colorTemperatureStrength
     $radius
-    px-$spacing
-    py-$spacing(-1)
-    w-full
-    bg-transparent
-    outline-none
-    text-$scale(-1,*)
+    border-$colorTemperature-$colorTemperatureStrength
+    text-$colorTemperature-$colorTemperatureStrength
+    px-$spacing(1,*)
+    py-$spacing
 
     dark:text-$colorTemperature-$colorTemperatureStrengthDark
     dark:border-$colorTemperature-$colorTemperatureStrengthDark
   `,
-  transferlistSearchClear: ``,
-  closeIcon: ``,
+  transferlistSearchInput: `
+    w-full
+    bg-transparent
+    outline-none
+    text-$scale(-1,*)
+    cursor-pointer
+  `,
+  transferlistSearchClear: `
+    m-auto
+  `,
+  closeIcon: `
+    ml-2
+    text-$colorTemperature-$colorTemperatureStrength
+    select-none
+    flex
+    text-$scale
+    [&>svg]:w-full
+    [&>svg]:max-w-[1em]
+  `,
   transferlistListItems: `
     h-full
     overflow-y-auto
@@ -168,7 +180,10 @@ export default {
   sourceHeaderLabel: ``,
   sourceHeaderItemCount: ``,
   sourceControls: ``,
-  sourceSearch: ``,
+  sourceSearch: `
+    flex
+    items-center
+  `,
   sourceSearchInput: ``,
   sourceSearchClear: ``,
   sourceListItems: `
