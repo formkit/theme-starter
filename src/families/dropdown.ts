@@ -221,7 +221,11 @@ export default {
     data-[is-active]:aria-selected:before:ring-2
     data-[is-active]:aria-selected:before:ring-inset
     data-[is-active]:aria-selected:before:ring-$accentColor-300
-
+    data-[is-active]:aria-selected:first:before:$radius(0,rounded-none,rounded-2xl)
+    data-[is-active]:aria-selected:first:before:rounded-b-none
+    data-[is-active]:aria-selected:last:before:$radius(0,rounded-none,rounded-2xl)
+    data-[is-active]:aria-selected:last:before:rounded-t-none
+    data-[is-active]:aria-selected:first:last:before:$radius(0,rounded-none,rounded-2xl)
     dark:text-$colorTemperature-$colorTemperatureStrengthDark
     dark:aria-selected:!bg-$accentColor-700
     dark:data-[is-active]:bg-$accentColor-700
