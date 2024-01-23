@@ -238,8 +238,8 @@ export default {
     focus:outline-none
     focus:ring-2
     focus:bg-white
-    group-data-[disabled]:opacity-50
-    group-data-[disabled]:pointer-events-none
+    group-data-[disabled=true]:opacity-50
+    group-data-[disabled=true]:pointer-events-none
 
     dark:text-$colorTemperature-$colorTemperatureStrengthDark
     dark:aria-selected:!bg-$accentColor-$accentColorStrengthDark
@@ -262,8 +262,8 @@ export default {
     aria-selected:!text-white
     focus:outline-none
     focus:ring-2
-    group-data-[disabled]:opacity-50
-    group-data-[disabled]:pointer-events-none
+    group-data-[disabled=true]:opacity-50
+    group-data-[disabled=true]:pointer-events-none
 
     dark:text-$colorTemperature-$colorTemperatureStrengthDark
     dark:aria-selected:!bg-$accentColor-$accentColorStrengthDark
@@ -283,8 +283,8 @@ export default {
   week: `
     grid
     grid-cols-7
-    group-data-[disabled]:opacity-50
-    group-data-[disabled]:pointer-events-none
+    group-data-[disabled=true]:opacity-50
+    group-data-[disabled=true]:pointer-events-none
   `,
   dayCell: `
     flex
@@ -302,8 +302,8 @@ export default {
     focus:outline-none
     focus:ring-2
     focus:bg-white
-    data-[disabled]:opacity-50
-    data-[disabled]:pointer-events-none
+    data-[disabled=true]:opacity-50
+    data-[disabled=true]:pointer-events-none
 
     dark:text-$colorTemperature-$colorTemperatureStrengthDark
     dark:bg-$colorTemperature-700
