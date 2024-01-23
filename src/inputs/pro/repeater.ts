@@ -1,6 +1,13 @@
 export default {
   // https://formkit.com/inputs/repeater#sections
   outer: `
+    $remove:group
+    $remove:data-[disabled]:select-none 
+    $remove:data-[disabled]:opacity-50
+    $remove:data-[disabled]:pointer-events-none
+    group/repeater ${
+      "" /** create a named group to not conflict with child styling */
+    }
     max-w-full ${"" /** override the input max width if set globally */}
   `,
   fieldset: `
@@ -61,8 +68,9 @@ export default {
     [&>li]:aspect-square
     [&>li]:text-$colorTemperature-500
     [&>li:hover]:text-$accentColor-600
-    [&>li_[disabled]]:opacity-25
-    [&>li_[disabled]]:!text-$colorTemperature-500 
+    group-data-[disabled]/repeater:[&>li_button]:opacity-50
+    group-data-[disabled]/repeater:[&>li_button]:!text-$colorTemperature-500 
+    group-data-[disabled]/repeater:[&>li_button]:pointer-events-none
 
     dark:[&>li]:text-$colorTemperature-500
     dark:[&>li:hover]:text-$accentColor-200
@@ -99,6 +107,9 @@ export default {
   `,
   addButton: `
     !mb-0
+    group-data-[disabled]/repeater:pointer-events-none
+    group-data-[disabled]/repeater:opacity-50
+    group-data-[disabled]/repeater:grayscale
   `,
   messages: ``,
   message: ``,
