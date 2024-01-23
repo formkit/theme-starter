@@ -188,6 +188,16 @@ export default {
     $radius(0,rounded-none,rounded-2xl) ${
       "" /** don't allow dropdown listbox to go full rounded */
     }
+    empty:hidden
+    border
+    border-$colorTemperature-$colorTemperatureStrength
+    dark:border-$colorTemperature-$colorTemperatureStrengthDark
+
+    ${
+      "" /** for overscroll dropdowns we need to disable border styles on the dropdownWrapper */
+    }
+    group-data-[overscroll]:shadow-none
+    group-data-[overscroll]:border-none
   `,
   listbox: `
     bg-white
@@ -195,12 +205,15 @@ export default {
       "" /** don't allow dropdown to go full rounded */
     }
     overflow-clip
-    border
-    border-$colorTemperature-$colorTemperatureStrength
     empty:hidden
-
     dark:bg-$colorTemperature-900
-    dark:border-$colorTemperature-$colorTemperatureStrengthDark
+
+    ${
+      "" /** for overscroll dropdowns we need to move the border styles to the listbox */
+    }
+    group-data-[overscroll]:border
+    group-data-[overscroll]:border-$colorTemperature-$colorTemperatureStrength
+    group-data-[overscroll]:dark:border-$colorTemperature-$colorTemperatureStrengthDark
   `,
   listitem: `
     relative
