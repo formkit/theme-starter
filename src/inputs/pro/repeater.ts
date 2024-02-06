@@ -30,6 +30,32 @@ export default {
     $radius(0,rounded-none,rounded-2xl) ${"" /** Don't go full rounded */}
 
     dark:border-$colorTemperature-$colorTemperatureStrengthDark
+
+    [&.formkit-dropZone]:opacity-30
+    [&.formkit-dropZone]:pointer-events-none
+  `,
+  dragHandleWrapper: `
+    relative
+    w-8
+    $radius(0,rounded-none,rounded-2xl)
+    rounded-tr-none
+    rounded-br-none
+  `,
+  dragHandle: `
+    w-full
+    h-full
+    flex
+    absolute
+    top-0
+    left-0
+    cursor-grab
+    active:cursor-grabbing
+  `,
+  dragHandleIcon: `
+    w-2
+    m-auto
+    text-$colorTemperature-500
+    [&>svg>path]:fill-current
   `,
   content: `
     min-w-0
