@@ -259,7 +259,10 @@ export default {
     sm:mx-$spacing
   `,
   controlLabel: `
-    hidden
+    absolute
+    opacity-0
+    pointer-events-none
+    text-[0px]
   `,
   transferlistButton: `
     ${"" /** These styles apply to every transferlist control button */}

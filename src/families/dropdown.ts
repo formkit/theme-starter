@@ -121,6 +121,12 @@ export default {
   `,
   tagLabel: ` ${"" /* dropdown, taglist */}
   `,
+  controlLabel: `
+    absolute
+    opacity-0
+    pointer-events-none
+    text-[0px]
+  `,
   listboxButton: ` ${"" /* autocomplete, taglist */}
     w-[2.5em]
     self-stretch
