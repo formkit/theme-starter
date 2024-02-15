@@ -77,6 +77,7 @@ export default {
   input: `
     text-$scale 
     text-$colorTemperature-$colorTemperatureStrength 
+    min-h-[1.5em] ${"" /* fix for iOS which collapses empty date-style inputs (date, month, week, etc) */}
     bg-transparent ${
       "" /** Since our 'inner' is styled to look like an input, we don't want an actual input background */
     }
