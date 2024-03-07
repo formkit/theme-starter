@@ -27,7 +27,7 @@ export default {
   `,
   video: `
     w-full
-    aspect-square
+    aspect-[1/1]
     object-cover
     block
     pointer-events-none
@@ -54,7 +54,7 @@ export default {
     top-1/2
     left-1/2
     w-[min(20em,75%)]
-    aspect-square
+    aspect-[1/1]
     -translate-x-1/2
     -translate-y-1/2
     $radius(0,rounded-none,rounded-xl)

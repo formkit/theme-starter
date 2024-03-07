@@ -82,7 +82,7 @@ export default {
     easier to use a descendent selector rather than repeating the same class list for each section name.
     */
     }
-    [&>li]:aspect-square
+    [&>li]:aspect-[1/1]
     [&>li]:w-[1.5em]
     [&>li]:h-[1.5em]
     [&>li]:my-$spacing(-2)
@@ -91,7 +91,7 @@ export default {
     [&>li]:items-center
     [&>li]:appearance-none
     [&>li]:justify-center
-    [&>li]:aspect-square
+    [&>li]:aspect-[1/1]
     [&>li]:text-$colorTemperature-500
     [&>li:hover]:text-$accentColor-600
     group-data-[disabled]/repeater:[&>li_button]:opacity-50
@@ -114,22 +114,22 @@ export default {
   moveDownIcon: `
     block
     w-[0.75em]
-    aspect-square
+    aspect-[1/1]
   `,
   moveUpIcon: `
     block
     w-[0.75em]
-    aspect-square
+    aspect-[1/1]
   `,
   removeIcon: `
     block
     w-[1.25em]
-    aspect-square
+    aspect-[1/1]
   `,
   addIcon: `
     block
     w-[1.25em]
-    aspect-square
+    aspect-[1/1]
   `,
   addButton: `
     !mb-0

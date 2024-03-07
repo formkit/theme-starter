@@ -114,7 +114,7 @@ export const multiStep = {
     flex
     items-center
     justify-center
-    aspect-square
+    aspect-[1/1]
     [line-height:1.25rem]
     text-white
     rounded-full

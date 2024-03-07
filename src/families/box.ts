@@ -33,7 +33,7 @@ export default {
     block
     select-none
     w-[1em]
-    aspect-square
+    aspect-[1/1]
     border
     border-$colorTemperature-$colorTemperatureStrength
     mr-$spacing(-1,1.5,3)

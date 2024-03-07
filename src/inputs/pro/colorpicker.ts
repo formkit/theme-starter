@@ -52,7 +52,7 @@ export default {
   canvasSwatchPreview: `
     text-$scale
     $radius
-    aspect-square
+    aspect-[1/1]
     shrink-0
     grow
     !w-[1.5em]
@@ -140,7 +140,7 @@ export default {
   `,
   closeIcon: `
     w-[1.75rem]
-    aspect-square
+    aspect-[1/1]
     p-1
     $radius
     border
@@ -155,7 +155,7 @@ export default {
     */
     }
     [&>svg]:w-full
-    [&>svg]:aspect-square
+    [&>svg]:aspect-[1/1]
     [&>svg]:max-w-none
     [&>svg]:max-h-none
   `,
@@ -241,7 +241,7 @@ export default {
     relative
     inline-flex
     w-[2em]
-    aspect-square
+    aspect-[1/1]
     overflow-hidden
     $radius
     ${
@@ -303,7 +303,7 @@ export default {
     inline-flex
     content-center
     items-center
-    aspect-square
+    aspect-[1/1]
     cursor-pointer
     $radius
     border
@@ -477,7 +477,7 @@ export default {
     ${"" /* canvas styles */}
     [&>canvas]:block
     [&>canvas]:w-full
-    [&>canvas]:aspect-square
+    [&>canvas]:aspect-[1/1]
     [&>canvas:focus-visible]:outline-none
     [&>canvas:focus-visible]:ring-2
   `,

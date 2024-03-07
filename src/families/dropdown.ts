@@ -169,7 +169,7 @@ export default {
     group-[]/tag:right-[0.5em]
     group-[]/tag:-translate-y-1/2
     group-[]/tag:!w-[0.5em]
-    group-[]/tag:aspect-square
+    group-[]/tag:aspect-[1/1]
     group-[]/tag:!text-inherit
   `,
   selectIcon: `

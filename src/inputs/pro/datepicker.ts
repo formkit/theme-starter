@@ -122,7 +122,7 @@ export default {
     [@media(max-width:431px)_and_(hover:none)]:group-[&:not([data-inline])]:group-data-[panel=month]/panel:grid-cols-[2.5em_1fr_2.5em]
   `,
   panelClose: `
-    aspect-square
+    aspect-[1/1]
     border
     border-$colorTemperature-400
     $radius

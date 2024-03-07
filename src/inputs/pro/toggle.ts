@@ -78,7 +78,7 @@ export default {
   thumb: `
     relative
     w-[50%]
-    aspect-square
+    aspect-[1/1]
     p-0.5
     left-0
     rounded-full
