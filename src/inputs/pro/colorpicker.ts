@@ -76,7 +76,7 @@ export default {
     absolute
     top-full
     left-0
-    z-20
+    z-[99]
 
     flex
     w-[100vw] ${"" /** Take up the available space */}

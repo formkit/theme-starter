@@ -74,7 +74,7 @@ export default {
     bg-white 
     border
     border-$colorTemperature-$colorTemperatureStrength
-    z-10
+    z-[99]
 
     dark:bg-$colorTemperature-900
     dark:border-$colorTemperature-$colorTemperatureStrengthDark
