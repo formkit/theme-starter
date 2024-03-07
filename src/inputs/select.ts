@@ -79,11 +79,14 @@ export default {
     text-$scale(-1,*)
   `,
   option: `
+    text-$colorTemperature-$colorTemperatureStrength
     group-data-[multiple]:text-$scale(-1,*)
     group-data-[multiple]:outline-none
     group-data-[multiple]:border-none
     group-data-[multiple]:py-$spacing(-1)
     group-data-[multiple]:px-$spacing
+
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
   `,
   help: ``,
   messages: ``,
