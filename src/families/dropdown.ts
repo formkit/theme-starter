@@ -141,11 +141,11 @@ export default {
   removeSelection: `
     ${
       "" /** === ⚠️ CAUTION: shared section, different treatments === 
-    The dropdown, autocomplete, and taglist all have a remove selection section.
-    the styles here handle the standard dropdown and autocomplete option appearance, 
-    but the dropdown and taglist require special consideration when their appearence
-    is rendering tags.
-    */
+      The dropdown, autocomplete, and taglist all have a remove selection section.
+      the styles here handle the standard dropdown and autocomplete option appearance, 
+      but the dropdown and taglist require special consideration when their appearence
+      is rendering tags.
+      */
     }
     w-[2.5em]
     self-stretch

@@ -94,10 +94,10 @@ export default {
   dropdownWrapper: `
   ${
     "" /** === ⚠️ CAUTION: Overscroll style ===
-  The dropdown input supports an 'overscroll' behavior that allows the to scroll its option list
-  over the input itself. This is a desired treatment for very long lists of options but it does require some
-  special styling considerations.
-*/
+    The dropdown input supports an 'overscroll' behavior that allows the to scroll its option list
+    over the input itself. This is a desired treatment for very long lists of options but it does require some
+    special styling considerations.
+  */
   }
   group-data-[overscroll]:m-0
   group-data-[overscroll]:shadow-none

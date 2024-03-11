@@ -75,8 +75,13 @@ export default {
   `,
   optGroup: `
     group/optgroup
+    bg-white
+    text-$colorTemperature-$colorTemperatureStrength
     font-bold
     text-$scale(-1,*)
+
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
+    dark:bg-$colorTemperature-900
   `,
   option: `
     text-$colorTemperature-$colorTemperatureStrength
@@ -87,6 +92,7 @@ export default {
     group-data-[multiple]:px-$spacing
 
     dark:text-$colorTemperature-$colorTemperatureStrengthDark
+    dark:bg-$colorTemperature-900
   `,
   help: ``,
   messages: ``,
