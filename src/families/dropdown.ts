@@ -190,6 +190,9 @@ export default {
   `,
   loaderIcon: `${"" /** defined in __global styles */}
   `,
+  loadMore: `
+    data-[is-active]:bg-$accentColor-100
+  `,
   dropdownWrapper: `
     $radius(0,rounded-none,rounded-2xl) ${
       "" /** don't allow dropdown listbox to go full rounded */
@@ -221,6 +224,26 @@ export default {
     group-data-[overscroll]:border-$colorTemperature-$colorTemperatureStrength
     group-data-[overscroll]:dark:border-$colorTemperature-$colorTemperatureStrengthDark
   `,
+  listitemGroup: `
+    group/optgroup
+    first:border-t-0
+    last:border-b-0
+    border-t
+    border-b
+    -mb-px
+    border-$colorTemperature-$colorTemperatureStrength
+    dark:border-$colorTemperature-$colorTemperatureStrengthDark
+  `,
+  groupLabel: `
+    block
+    pt-$spacing(-1,*)
+    pb-$spacing(-2,*)
+    px-$spacing(1,*)
+    font-bold
+    pointer-events-none
+    text-$colorTemperature-$colorTemperatureStrength
+    dark:text-$colorTemperature-$colorTemperatureStrengthDark
+  `,
   listitem: `
     relative
     flex
@@ -247,6 +270,9 @@ export default {
     dark:text-$colorTemperature-$colorTemperatureStrengthDark
     dark:data-[is-active]:bg-$accentColor-700
     dark:data-[is-active]:before:ring-$accentColor-400
+
+    group-[]/optgroup:first:before:!rounded-none
+    group-[]/optgroup:last:before:!rounded-none
   `,
   selectedIcon: `
     flex
