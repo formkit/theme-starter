@@ -33,7 +33,7 @@
     "@formkit/addons": "latest",
     "@formkit/barcode": "latest",
     "@formkit/icons": "latest",
-    "@formkit/pro": "latest",
+    "@formkit/pro": "next",
     "@formkit/theme-editor": "latest",
     "@formkit/vue": "latest",
     "@typescript-eslint/eslint-plugin": "^6.21.0",

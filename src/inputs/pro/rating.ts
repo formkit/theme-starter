@@ -12,28 +12,62 @@ export default {
   prefixIcon: ``,
   suffixIcon: ``,
   itemsWrapper: `
+    relative
+    inline-flex
+    focus:outline-2
+    focus:outline-$accentColor-$accentColorStrength
+  `,
+  onItemRow: `
+    h-full
     w-full
   `,
-  onItems: `
-    text-yellow-400
+  offItemRow: `
+    h-full
+    w-full
   `,
   onItemWrapper: `
     [&>*]:w-full
-    [&>*]:h-auto
-    [&>*]:max-w-none
-    [&>*]:max-h-none
-  `,
-  offItems: `
-    text-$colorTemperature-400
-    dark:first-letter:text-$colorTemperature-600
+    [&>*]:h-full
+    w-full
+    h-full
+    text-yellow-400
   `,
   offItemWrapper: `
     [&>*]:w-full
-    [&>*]:h-auto
-    [&>*]:max-w-none
-    [&>*]:max-h-none
+    [&>*]:h-full
+    w-full
+    h-full
+    text-$colorTemperature-400
+    dark:text-$colorTemperature-500
+  `,
+  ratingItem: `
+    relative
+    focus-within:outline
+    focus-within:outline-2
+    focus-within:outline-$accentColor-$accentColorStrength
+    w-[1.5em]
+    h-[1.5em]
+  `,
+  itemLabelInner: `
+    h-px
+    w-px
+    overflow-hidden
+    absolute
+    white-space-nowrap
+  `,
+  itemLabel: `
+    absolute
+    h-full
   `,
   ratingIcon: `
-    w-full
+    w-[1.5em]
+    h-[1.5em]
+    flex
+  `,
+  input: `
+    outline-none
+  `,
+  messages: `
+    mt-$spacing(-1)
   `,
 };

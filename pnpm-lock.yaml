@@ -20,8 +20,8 @@ devDependencies:
     specifier: latest
     version: 1.5.7
   '@formkit/pro':
-    specifier: latest
-    version: 0.121.1
+    specifier: next
+    version: 0.122.16-4c97f55(@formkit/core@1.6.2)(@formkit/inputs@1.6.2)
   '@formkit/theme-editor':
     specifier: latest
     version: 0.5.1
@@ -349,14 +349,14 @@ packages:
   /@formkit/addons@1.5.7:
     resolution: {integrity: sha512-tBwSqfbUS5W1vZQ4sN5zqQ0+FLfY51HM08H9rBiNu1FOKUS+XVAlZp2r0di24Ws6SCKs4LWfM3qXz+ajMRbb+Q==}
     dependencies:
-      '@formkit/auto-animate': 0.8.1
+      '@formkit/auto-animate': 0.8.2
       '@formkit/core': 1.5.7
       '@formkit/inputs': 1.5.7
       '@formkit/utils': 1.5.7
     dev: true
 
-  /@formkit/auto-animate@0.8.1:
-    resolution: {integrity: sha512-0/Z2cuNXWVVIG/l0SpcHAWFhGdvLJ8DRvEfRWvmojtmRWfEy+LWNwgDazbZqY0qQYtkHcoEK3jBLkhiZaB/4Ig==}
+  /@formkit/auto-animate@0.8.2:
+    resolution: {integrity: sha512-SwPWfeRa5veb1hOIBMdzI+73te5puUBHmqqaF1Bu7FjvxlYSz/kJcZKSa9Cg60zL0uRNeJL2SbRxV6Jp6Q1nFQ==}
     dev: true
 
   /@formkit/barcode@1.0.2:
@@ -397,6 +397,12 @@ packages:
     dependencies:
       '@formkit/utils': 1.5.7
 
+  /@formkit/core@1.6.2:
+    resolution: {integrity: sha512-48LGugLoQ9QR/GDvsVwviMQ/lk9rWA0iDy8Zg9BXPn0nfuWr5EW2IOTEZW3ZX8mAyvVZ4s+Xt5S40la8Sj5GTA==}
+    dependencies:
+      '@formkit/utils': 1.6.2
+    dev: true
+
   /@formkit/dev@1.5.7:
     resolution: {integrity: sha512-Pjd9y6+UaWcRKBK9U8G2c9a9XJzoaj/ylcefC8tuXxeivaZm7jm3O4mlx4pl/1AcGnV85ECd9vl3nXeuBGZUkg==}
     dependencies:
@@ -404,8 +410,8 @@ packages:
       '@formkit/utils': 1.5.7
     dev: true
 
-  /@formkit/drag-and-drop@0.0.11:
-    resolution: {integrity: sha512-6iH9Y71P3Id0FfG0N4M/P6KM84GU1gJHokKzKc4SMZvWe6b0O8Ev25tsVv35jDsWMTLI+frjsEt1CsJvV6Es/Q==}
+  /@formkit/drag-and-drop@0.0.30:
+    resolution: {integrity: sha512-2DjdagW6ibG/SfTwOxH1y/NBK50nSV2tfZ0iXMbdI/NCAsXr4UrKI/ytjm38qunpzb1w68r4b5iODV7YE/lbgA==}
     dev: true
 
   /@formkit/i18n@1.5.7:
@@ -428,6 +434,13 @@ packages:
       '@formkit/core': 1.5.7
       '@formkit/utils': 1.5.7
 
+  /@formkit/inputs@1.6.2:
+    resolution: {integrity: sha512-Fe0xz6npjjoq+A/KupyzRTWUs0/Y5j8Ewh6XB8QMDMdutDeDamumsdZN6Mi9ilnQctZkPn6jKUPUGXRyMCfVDw==}
+    dependencies:
+      '@formkit/core': 1.6.2
+      '@formkit/utils': 1.6.2
+    dev: true
+
   /@formkit/observer@1.5.7:
     resolution: {integrity: sha512-oYgLuRhypmcd4Kylc7U2SFrgepEQ9KKhioQvMW41Zq7YqnHBJ+0ICbPujVtFB8Oz0t+L4hsdgm0Ucnxns3Exag==}
     dependencies:
@@ -435,12 +448,16 @@ packages:
       '@formkit/utils': 1.5.7
     dev: true
 
-  /@formkit/pro@0.121.1:
-    resolution: {integrity: sha512-cs1Czrnega/nKMBaK89ThzogSUiHqy8FFUYbonFGLlB9DJ882NGP1/Zg0ebkSucTX8UG2vhMa+JLfgrC8rNtuw==}
+  /@formkit/pro@0.122.16-4c97f55(@formkit/core@1.6.2)(@formkit/inputs@1.6.2):
+    resolution: {integrity: sha512-9Lk04HfbQ6TRxeTNVDV52rZre6aRgjTieYL0yih030yO3RdVPYxlj3QOolKasnSpeW/8gNPLl9UHoQU8gCnP+A==}
+    peerDependencies:
+      '@formkit/core': ^1.5.9
+      '@formkit/inputs': ^1.5.9
     dependencies:
-      '@formkit/core': 1.5.7
-      '@formkit/drag-and-drop': 0.0.11
-      '@formkit/inputs': 1.5.7
+      '@formkit/core': 1.6.2
+      '@formkit/drag-and-drop': 0.0.30
+      '@formkit/inputs': 1.6.2
+      '@formkit/tempo': 0.0.8
     dev: true
 
   /@formkit/rules@1.5.7:
@@ -449,6 +466,10 @@ packages:
       '@formkit/core': 1.5.7
       '@formkit/utils': 1.5.7
       '@formkit/validation': 1.5.7
+    dev: true
+
+  /@formkit/tempo@0.0.8:
+    resolution: {integrity: sha512-q9Ch3Epjb5yFVNV2vAruHyPwcvZujiPcBQ7r6if+HmOciMhwkQccL9NOm9LNmN23hNk2y3+El/ygUH2/x539sg==}
     dev: true
 
   /@formkit/theme-creator@0.11.1:
@@ -505,6 +526,10 @@ packages:
 
   /@formkit/utils@1.5.7:
     resolution: {integrity: sha512-rZuP4ynV/XdsNlX2VuuP0lYTLyY0RCczAt4+pIqo9E/6nwzGKxruoYWr9bbi4WHQQ6rrgf34QMDAdfPC9pGbJw==}
+
+  /@formkit/utils@1.6.2:
+    resolution: {integrity: sha512-H7ai+AbemaF9okM2fUeHQUBEiGmiyXX/4M/P1ANI9C3nAqsPewmZucLH0QxihkjuMYOwO+MnHbG3rLS7FAkxig==}
+    dev: true
 
   /@formkit/validation@1.5.7:
     resolution: {integrity: sha512-Xp6aCtFxKZBfUV7mMEExgyYzzYXzq5+d2I7Dvafv535ejB7X3C3lAVTtNQx+jnADu5C9GlBSmYNPw5tQt9CTbQ==}
