@@ -5,10 +5,7 @@ export default {
   wrapper: ``,
   label: ``,
   inner: `
-    relative 
-    pl-0 ${
-      "" /** remove padding on the left side of the input so that panel calculated position starts fully at left edge */
-    }
+    relative
   `,
   prefixIcon: ``,
   suffixIcon: ``,
@@ -32,11 +29,7 @@ export default {
   overlayChar: ``,
   overlayEnum: ``,
   overlayLiteral: ``,
-  input: `
-    pl-$spacing(2,*) ${
-      "" /** add padding to the left side of the input to make up for the cancelled padding on the inner section */
-    }
-  `,
+  input: ``,
   openButton: `
     appearance-none
     border-0
@@ -69,6 +62,7 @@ export default {
     absolute
     min-w-[20em]
     top-full
+    left-0
     $radius(0,rounded-none,rounded-2xl) ${"" /** Don't go full rounded */}
     p-$spacing(4,*)
     bg-white 
