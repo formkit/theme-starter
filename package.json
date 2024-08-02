@@ -1,6 +1,6 @@
 {
   "name": "@formkit/theme-starter",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "author": "",
   "license": "MIT",
   "main": "dist/theme.js",
