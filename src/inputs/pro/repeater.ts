@@ -32,7 +32,6 @@ export default {
     dark:border-$colorTemperature-$colorTemperatureStrengthDark
 
     [&.formkit-dropZone]:opacity-30
-    [&.formkit-dropZone]:pointer-events-none
   `,
   dragHandleWrapper: `
     relative
