@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__read-website-fast__read_website"
+    ]
+  }
+}
