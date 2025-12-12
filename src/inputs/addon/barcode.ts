@@ -9,7 +9,7 @@ export default {
   `,
   dialog: `
     border-none
-    outline-none
+    outline-hidden
     overflow-clip
     p-0
     bg-black

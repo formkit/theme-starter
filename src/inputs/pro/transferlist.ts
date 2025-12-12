@@ -103,7 +103,7 @@ export default {
   transferlistSearchInput: `
     w-full
     bg-transparent
-    outline-none
+    outline-hidden
     text-$scale(-1,*)
     cursor-pointer
   `,

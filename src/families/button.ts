@@ -20,7 +20,7 @@ export default {
     $radius
     px-$spacing(7,*)
     py-$spacing(2,*)
-    outline-none
+    outline-hidden
     text-$colorTemperature-$colorTemperatureStrength
     border
     border-$colorTemperature-$colorTemperatureStrength

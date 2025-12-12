@@ -76,7 +76,7 @@ export default {
     }
     ${"" /** override browser default styles for button */}
     appearance-none
-    outline-none
+    outline-hidden
     ${
       "" /** === ⚠️ CAUTION: File remove z-index === 
     If we do not bump up the z-index of the remove section then it will not be 

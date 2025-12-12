@@ -65,7 +65,7 @@ export default {
     flex
   `,
   input: `
-    outline-none
+    outline-hidden
   `,
   messages: `
     mt-$spacing(-1)

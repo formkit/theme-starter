@@ -49,7 +49,7 @@ export default {
       panel from popping up when your theme is in dark mode. */
     }
     appearance-none 
-    outline-none
+    outline-hidden
     [color-scheme:light] 
     dark:[color-scheme:dark]
     placeholder:text-$colorTemperature-400

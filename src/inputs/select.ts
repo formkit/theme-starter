@@ -44,7 +44,7 @@ export default {
     text-$colorTemperature-$colorTemperatureStrength
     text-ellipsis ${"" /** recommended */}
     min-w-0 ${"" /** allows input to shrink */}
-    outline-none
+    outline-hidden
     bg-transparent
     group-data-[prefix-icon]:!pl-0
     group-data-[suffix-icon]:!pr-0
@@ -86,7 +86,7 @@ export default {
   option: `
     text-$colorTemperature-$colorTemperatureStrength
     group-data-[multiple]:text-$scale(-1,*)
-    group-data-[multiple]:outline-none
+    group-data-[multiple]:outline-hidden
     group-data-[multiple]:border-none
     group-data-[multiple]:py-$spacing(-1)
     group-data-[multiple]:px-$spacing

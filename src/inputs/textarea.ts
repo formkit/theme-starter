@@ -41,7 +41,7 @@ export default {
     !px-$spacing(3) ${
       "" /** We want spacing on this input because it has a native UI drag handle */
     }
-    outline-none
+    outline-hidden
     bg-transparent
 
     dark:text-$colorTemperature-$colorTemperatureStrengthDark

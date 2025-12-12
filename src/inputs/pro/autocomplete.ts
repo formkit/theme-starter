@@ -35,7 +35,7 @@ export default {
     group-data-[multiple]:border
     group-data-[multiple]:border-$colorTemperature-$colorTemperatureStrength
     group-data-[multiple]:mb-$spacing(-1)
-    outline-none
+    outline-hidden
     data-[active-selection=true]:ring-2
 
     dark:bg-$colorTemperature-700

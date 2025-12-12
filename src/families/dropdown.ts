@@ -47,7 +47,7 @@ export default {
     text-$colorTemperature-$colorTemperatureStrength
     text-ellipsis
     min-w-0 ${"" /** allows section to shrink */}
-    outline-none
+    outline-hidden
     bg-transparent
     group-data-[prefix-icon]:!pl-0
     group-data-[suffix-icon]:!pr-0
@@ -100,7 +100,7 @@ export default {
     }
     mr-$spacing(-2)
     mb-$spacing(-2)
-    outline-none
+    outline-hidden
     data-[active-selection=true]:ring-2
   `,
   tag: ` ${"" /* dropdown, taglist */}

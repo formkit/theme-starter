@@ -37,7 +37,7 @@ export default {
     flex
     p-0
     self-stretch
-    focus-visible:outline-none
+    focus-visible:outline-hidden
     focus-visible:ring-2
   `,
   calendarIcon: `
@@ -176,7 +176,7 @@ export default {
     py-$spacing(-3,*)
     col-start-1
     col-end-1
-    focus-visible:outline-none
+    focus-visible:outline-hidden
     focus-visible:ring-2
   `,
   next: `
@@ -185,7 +185,7 @@ export default {
     py-$spacing(-3,*)
     col-start-3
     col-end-3
-    focus-visible:outline-none
+    focus-visible:outline-hidden
     focus-visible:ring-2
   `,
   prevLabel: `
@@ -229,7 +229,7 @@ export default {
     bg-transparent
     aria-selected:!bg-$accentColor-$accentColorStrength
     aria-selected:!text-white
-    focus:outline-none
+    focus:outline-hidden
     focus:ring-2
     focus:bg-white
     group-data-[disabled=true]:opacity-50
@@ -254,7 +254,7 @@ export default {
     p-$spacing(-2,*)
     aria-selected:!bg-$accentColor-$accentColorStrength
     aria-selected:!text-white
-    focus:outline-none
+    focus:outline-hidden
     focus:ring-2
     group-data-[disabled=true]:opacity-50
     group-data-[disabled=true]:pointer-events-none
@@ -293,7 +293,7 @@ export default {
     bg-$colorTemperature-100
     aria-selected:bg-$accentColor-$accentColorStrength
     aria-selected:text-white
-    focus:outline-none
+    focus:outline-hidden
     focus:ring-2
     focus:bg-white
     data-[disabled=true]:opacity-50
@@ -316,7 +316,7 @@ export default {
     py-$spacing
     px-$spacing(2,*)
     my-$spacing(1)
-    focus-visible:outline-none
+    focus-visible:outline-hidden
     focus-visible:ring-2
 
     dark:text-$colorTemperature-$colorTemperatureStrengthDark
@@ -330,7 +330,7 @@ export default {
     border-2
     border-$colorTemperature-$colorTemperatureStrength
     mx-1
-    focus-visible:outline-none
+    focus-visible:outline-hidden
     focus-visible:ring-2
 
     dark:text-$colorTemperature-$colorTemperatureStrengthDark
@@ -344,7 +344,7 @@ export default {
     border-2
     border-$colorTemperature-$colorTemperatureStrength
     mx-1
-    focus-visible:outline-none
+    focus-visible:outline-hidden
     focus-visible:ring-2
 
     dark:text-$colorTemperature-$colorTemperatureStrengthDark
@@ -358,7 +358,7 @@ export default {
     border-2
     border-$colorTemperature-$colorTemperatureStrength
     mx-1
-    focus-visible:outline-none
+    focus-visible:outline-hidden
     focus-visible:ring-2
 
     dark:text-$colorTemperature-$colorTemperatureStrengthDark

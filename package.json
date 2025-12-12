@@ -1,6 +1,10 @@
 {
   "name": "@formkit/theme-starter",
-  "version": "1.4.2",
+  "version": "2.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/formkit/theme-starter.git"
+  },
   "author": "",
   "license": "MIT",
   "main": "dist/theme.js",
@@ -19,7 +23,7 @@
     "build": "tsup",
     "build-web": "vite build",
     "preview": "vite preview",
-    "release": "pnpm build && npx publint && npx bumpp && pnpm publish",
+    "release": "pnpm build && npx publint && npx bumpp --push",
     "test": "vitest",
     "lint": "eslint"
   },
@@ -42,7 +46,7 @@
     "eslint": "^8.56.0",
     "prettier": "^3.2.5",
     "publint": "^0.2.7",
-    "tailwindcss": "^3.4.1",
+    "tailwindcss": "^4.0.0",
     "tsup": "^7.2.0",
     "typescript": "^5.3.3",
     "vite": "^4.5.2",

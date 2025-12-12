@@ -11,7 +11,7 @@ export default {
     pl-$spacing
     group-data-[inline]:border-none
     group-data-[inline]:p-0
-    group-data-[inline]:outline-none
+    group-data-[inline]:outline-hidden
     group-data-[inline]:!ring-0 ${
       "" /** For inline colorpicker a focus outline does not make sense */
     }
@@ -175,7 +175,7 @@ export default {
     pointer-events-none ${
       "" /** prevent the control from being clickable because the underlying canvas has the click event handlers */
     }
-    focus-visible:outline-none
+    focus-visible:outline-hidden
     focus-visible:ring-2
     
     dark:bg-$colorTemperature-900
@@ -188,7 +188,7 @@ export default {
       they are sometimes incorrectly applied by the browser.
     */
     }
-    data-[prevent-focus-style]:outline-none
+    data-[prevent-focus-style]:outline-hidden
     data-[prevent-focus-style]:ring-0
     data-[prevent-focus-style]:shadow-[0_0_0_2px_rgba(255,255,255,1),0_0_0_3px_rgba(0,0,0,0.2)]
   `,
@@ -357,7 +357,7 @@ export default {
     [&>input::-webkit-outer-spin-button]:appearance-none
     [&>input::-webkit-inner-spin-button]:appearance-none
     [&>input::-webkit-inner-spin-button]:m-0
-    [&>input:focus]:outline-none
+    [&>input:focus]:outline-hidden
     [&>input:focus]:ring-2
     max-[431px]:[&>input]:text-base ${
       "" /** prevent zoom on mobile touch devices */
@@ -478,7 +478,7 @@ export default {
     [&>canvas]:block
     [&>canvas]:w-full
     [&>canvas]:aspect-[1/1]
-    [&>canvas:focus-visible]:outline-none
+    [&>canvas:focus-visible]:outline-hidden
     [&>canvas:focus-visible]:ring-2
   `,
   help: `
