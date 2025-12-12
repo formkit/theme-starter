@@ -1,7 +1,11 @@
 {
   "permissions": {
     "allow": [
-      "mcp__read-website-fast__read_website"
+      "mcp__read-website-fast__read_website",
+      "Bash(pnpm lint:*)",
+      "Bash(pnpm install:*)",
+      "Bash(xxd:*)",
+      "Bash(LC_ALL=C sed:*)"
     ]
   }
 }

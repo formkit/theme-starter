@@ -211,7 +211,7 @@ export default createTheme({
     spacing: {
       /**
        * This variable is using the default scale — it does not provide its own.
-       * It does provide a min and max value to constrain the editor UI — however,
+       * It does provide a min and max value to constrain the editor UI — however,
        * variable usage by the theme author within the theme (eg. $spacing(-2,0.5,3))
        * can still access values beyond the min and max.
        */

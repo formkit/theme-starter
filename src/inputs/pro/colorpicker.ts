@@ -81,7 +81,7 @@ export default {
     flex
     w-[100vw] ${"" /** Take up the available space */}
     max-w-[18.5em] ${
-      "" /** constrain the max width of the panel — by using em units the size will respond to changes in our $scale variable */
+      "" /** constrain the max width of the panel — by using em units the size will respond to changes in our $scale variable */
     }
     touch-manipulation ${"" /** prevent scrolling on touch devices */}
     flex-col
@@ -182,7 +182,7 @@ export default {
 
     ${
       "" /** === ⚠️ CAUTION: prevent-focus-styles ===
-      Sometimes browsers have a real hard time knowing when to apply focus styles — and they do 
+      Sometimes browsers have a real hard time knowing when to apply focus styles — and they do 
       so inappropriately. The colorpicker tracks some of its own heuristics for when to apply focus styles
       and you can use the prevent-focus-style attribute to override the application of focus styles when 
       they are sometimes incorrectly applied by the browser.

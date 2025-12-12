@@ -188,7 +188,7 @@ export default {
   sourceSearchClear: ``,
   sourceListItems: `
     group-data-[is-max=true]:opacity-50 ${
-      "" /** similar to disabled styles — indicate when users cannot transfer any more items */
+      "" /** similar to disabled styles — indicate when users cannot transfer any more items */
     }
   `,
   sourceListItem: ``,

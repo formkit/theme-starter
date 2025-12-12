@@ -1,6 +1,7 @@
 {
   "name": "@formkit/theme-starter",
   "version": "2.0.0",
+  "type": "module",
   "packageManager": "pnpm@10.14.0",
   "repository": {
     "type": "git",
@@ -41,10 +42,11 @@
     "@formkit/pro": "next",
     "@formkit/theme-editor": "latest",
     "@formkit/vue": "latest",
-    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@eslint/js": "^9.39.1",
     "@vitejs/plugin-vue": "^4.6.2",
     "bumpp": "^9.3.0",
     "eslint": "^9.39.1",
+    "typescript-eslint": "^8.32.1",
     "prettier": "^3.2.5",
     "publint": "^0.2.7",
     "tailwindcss": "^4.0.0",
