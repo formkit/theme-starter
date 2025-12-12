@@ -5,7 +5,9 @@
       "Bash(pnpm lint:*)",
       "Bash(pnpm install:*)",
       "Bash(xxd:*)",
-      "Bash(LC_ALL=C sed:*)"
+      "Bash(LC_ALL=C sed:*)",
+      "Bash(npx publint:*)",
+      "Bash(pnpm build:*)"
     ]
   }
 }
