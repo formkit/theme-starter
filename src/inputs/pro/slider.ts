@@ -157,7 +157,7 @@ export default {
     text-xs
     leading-none
     whitespace-nowrap
-    $radius(0,rounded-none,rounded) ${"" /** Don't go full rounded */}
+    $radius(0,rounded-none,rounded-sm) ${"" /** Don't go full rounded */}
     opacity-0 ${"" /** hide the tooltip by default */}
     transition-opacity
     group-hover:opacity-100

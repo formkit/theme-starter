@@ -201,7 +201,9 @@ export default createTheme({
        */
       scale: [
         "rounded-none",
+        "rounded-xs",
         "rounded-sm",
+        "rounded-md",
         "rounded-lg",
         "rounded-xl",
         "rounded-2xl",

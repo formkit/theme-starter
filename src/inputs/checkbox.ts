@@ -16,7 +16,7 @@ export default {
        * or they will look like radio inputs.
        */
     }
-    $radius(0,rounded-none,rounded)
+    $radius(0,rounded-none,rounded-sm)
   `,
   decoratorIcon: `
     max-w-[66.66%]
