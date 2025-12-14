@@ -20,7 +20,7 @@ export default {
       "" /**  You probably don't want a border around the whole range slider */
     }
     !ring-0 ${
-      "" /** You probably don't want a focus ring around the whole range slider — just the UI control */
+      "" /** You probably don't want a focus ring around the whole range slider — just the UI control */
     }
     !px-0 ${
       "" /** we're going to want our range input track to go edge to edge */

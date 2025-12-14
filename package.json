@@ -1,20 +1,27 @@
 {
   "name": "@formkit/theme-starter",
   "version": "2.0.0",
+  "type": "module",
+  "packageManager": "pnpm@10.14.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/formkit/theme-starter.git"
   },
   "author": "",
   "license": "MIT",
-  "main": "dist/theme.js",
-  "module": "dist/theme.mjs",
+  "main": "dist/theme.cjs",
+  "module": "dist/theme.js",
   "types": "dist/theme.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/theme.d.ts",
-      "import": "./dist/theme.mjs",
-      "require": "./dist/theme.js"
+      "import": {
+        "types": "./dist/theme.d.ts",
+        "default": "./dist/theme.js"
+      },
+      "require": {
+        "types": "./dist/theme.d.cts",
+        "default": "./dist/theme.cjs"
+      }
     },
     "./package.json": "./package.json"
   },
@@ -40,14 +47,15 @@
     "@formkit/pro": "next",
     "@formkit/theme-editor": "latest",
     "@formkit/vue": "latest",
-    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@eslint/js": "^9.39.1",
     "@vitejs/plugin-vue": "^4.6.2",
     "bumpp": "^9.3.0",
-    "eslint": "^8.56.0",
+    "eslint": "^9.39.1",
+    "typescript-eslint": "^8.32.1",
     "prettier": "^3.2.5",
     "publint": "^0.2.7",
     "tailwindcss": "^4.0.0",
-    "tsup": "^7.2.0",
+    "tsup": "^8.5.1",
     "typescript": "^5.3.3",
     "vite": "^4.5.2",
     "vitest": "^0.34.6",

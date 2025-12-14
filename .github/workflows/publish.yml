@@ -18,8 +18,7 @@ jobs:
         with:
           node-version: lts/*
           registry-url: https://registry.npmjs.org
+      - run: npm install -g npm@latest
       - run: pnpm install
       - run: pnpm build
-      - run: npm publish --provenance --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - run: npm publish --access public
