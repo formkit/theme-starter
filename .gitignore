@@ -24,3 +24,4 @@ dist-ssr
 *.sw?
 /.vscode
 /.env
+.node_modules_tmp
