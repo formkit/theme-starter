@@ -28,8 +28,8 @@ importers:
         specifier: next
         version: 0.126.16-d3b47c6(@formkit/core@1.6.9)(@formkit/inputs@1.6.9)
       '@formkit/theme-editor':
-        specifier: latest
-        version: 0.6.1
+        specifier: ^0.6.2
+        version: 0.6.2
       '@formkit/vue':
         specifier: latest
         version: 1.6.9(tailwindcss@4.1.18)(vue@3.5.25(typescript@5.9.3))
@@ -478,8 +478,8 @@ packages:
   '@formkit/theme-creator@2.0.0':
     resolution: {integrity: sha512-I6+xfEUBROpCG6aQwNH6iBgzPeWMAh9iikCGz1yRcsI39KG6b9idIhwysyo8ax2zKMrsuQ7coeeFiK6i5Q140Q==}
 
-  '@formkit/theme-editor@0.6.1':
-    resolution: {integrity: sha512-9KsP3FgeyShbpL3Tmkj9VexJwZBUbceSlpf8n773lPPi7ttPKWUD6ltcXLZGtQUUk2jlwQ/LRBG8srCNss3fuw==}
+  '@formkit/theme-editor@0.6.2':
+    resolution: {integrity: sha512-vtHYYyzhMOLf2hff77g0NcJqF27k7XC/NX/7Zy9eaoQsV/5Mv/EKyicrCMWhd889TafTQe1Ibqm3KGeqFr+ktw==}
 
   '@formkit/themes@1.6.9':
     resolution: {integrity: sha512-/UD+MehQEdcCEadt73eIBGGAMEK8ODN0yq9r9299WvQxIELCOP2MbcxuWCV/g2Vd15Xhl8YFdn4KCzQi4X7QXA==}
@@ -2667,7 +2667,7 @@ snapshots:
       - tsx
       - yaml
 
-  '@formkit/theme-editor@0.6.1':
+  '@formkit/theme-editor@0.6.2':
     dependencies:
       '@arrow-js/core': 1.0.0-alpha.9
       '@formkit/theme-creator': 0.9.1
