@@ -1,6 +1,6 @@
 {
   "name": "@formkit/theme-starter",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "type": "module",
   "packageManager": "pnpm@10.14.0",
   "repository": {
