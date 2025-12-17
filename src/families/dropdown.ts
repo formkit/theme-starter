@@ -164,13 +164,13 @@ export default {
       removeSelection section within the context of a tag.
       */
     }
-    group-[]/tag:absolute
-    group-[]/tag:top-1/2
-    group-[]/tag:right-[0.5em]
-    group-[]/tag:-translate-y-1/2
-    group-[]/tag:!w-[0.5em]
-    group-[]/tag:aspect-[1/1]
-    group-[]/tag:!text-inherit
+    group-[&]/tag:absolute
+    group-[&]/tag:top-1/2
+    group-[&]/tag:right-[0.5em]
+    group-[&]/tag:-translate-y-1/2
+    group-[&]/tag:!w-[0.5em]
+    group-[&]/tag:aspect-[1/1]
+    group-[&]/tag:!text-inherit
   `,
   selectIcon: `
     text-$scale
@@ -271,8 +271,8 @@ export default {
     dark:data-[is-active]:bg-$accentColor-700
     dark:data-[is-active]:before:ring-$accentColor-400
 
-    group-[]/optgroup:first:before:!rounded-none
-    group-[]/optgroup:last:before:!rounded-none
+    group-[&]/optgroup:first:before:!rounded-none
+    group-[&]/optgroup:last:before:!rounded-none
   `,
   selectedIcon: `
     flex

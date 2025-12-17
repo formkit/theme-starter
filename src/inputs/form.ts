@@ -18,5 +18,5 @@ export default {
     dark:text-$colorTemperature-$colorTemperatureStrengthDark
   `,
   messages: ``,
-  message: `group-[]/summary:text-$scale(-1,*)`,
+  message: `group-[&]/summary:text-$scale(-1,*)`,
 };
