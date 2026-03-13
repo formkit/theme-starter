@@ -5,4 +5,7 @@ import vue from "@vitejs/plugin-vue";
 export default defineConfig({
   plugins: [vue()],
   envPrefix: "FORMKIT_",
+  server: {
+    allowedHosts: [".orb.local"],
+  },
 });
