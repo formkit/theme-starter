@@ -24,4 +24,5 @@ dist-ssr
 *.sw?
 /.vscode
 /.env
+.pnpm-store/
 .node_modules_tmp
